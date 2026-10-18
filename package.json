@@ -1,5 +1,5 @@
 {
-  "name": "js-xhttp",
+  "name": "server",
   "version": "1.0.0",
   "description": "server",
   "main": "index.js",
